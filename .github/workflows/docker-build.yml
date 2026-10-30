@@ -1,0 +1,95 @@
+name: Ecommerce CI/CD
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+
+env:
+  BACKEND_IMAGE: ashikdv/ecommerce-backend
+  FRONTEND_IMAGE: ashikdv/ecommerce-frontend
+
+jobs:
+
+  build-and-test:
+    name: Build and Test
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 8.0.x
+
+      - name: Restore backend dependencies
+        working-directory: ecommerce-app/backend/EcommerceApi
+        run: dotnet restore
+
+      - name: Build backend
+        working-directory: ecommerce-app/backend/EcommerceApi
+        run: dotnet build --no-restore --configuration Release
+
+      - name: Test backend
+        working-directory: ecommerce-app/backend/EcommerceApi
+        run: dotnet test --no-build --configuration Release --verbosity normal
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: ecommerce-app/frontend/package-lock.json
+
+      - name: Install frontend dependencies
+        working-directory: ecommerce-app/frontend
+        run: npm ci
+
+      - name: Build frontend
+        working-directory: ecommerce-app/frontend
+        run: npm run build
+
+  docker:
+    name: Build and Push Docker Images
+    runs-on: ubuntu-latest
+    needs: build-and-test
+
+    if: github.event_name == 'push' && github.ref == 'refs/heads/master'
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Login to Docker Hub
+        uses: docker/login-action@v3
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+
+      - name: Setup Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Build and Push Backend Image
+        uses: docker/build-push-action@v6
+        with:
+          context: ./ecommerce-app/backend/EcommerceApi
+          file: ./ecommerce-app/backend/EcommerceApi/Dockerfile
+          push: true
+          tags: |
+            ${{ env.BACKEND_IMAGE }}:${{ github.sha }}
+            ${{ env.BACKEND_IMAGE }}:latest
+
+      - name: Build and Push Frontend Image
+        uses: docker/build-push-action@v6
+        with:
+          context: ./ecommerce-app/frontend
+          file: ./ecommerce-app/frontend/Dockerfile
+          push: true
+          tags: |
+            ${{ env.FRONTEND_IMAGE }}:${{ github.sha }}
+            ${{ env.FRONTEND_IMAGE }}:latest
