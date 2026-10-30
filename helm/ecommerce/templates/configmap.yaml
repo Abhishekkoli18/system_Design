@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+
+metadata:
+  name: {{ .Release.Name }}-backend-config
+
+data:
+  cors-allowed-origin: {{ .Values.backend.config.corsAllowedOrigin | quote }}
+
+  redis-connection-string: {{ .Values.backend.config.redisConnectionString | quote }}

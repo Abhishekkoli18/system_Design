@@ -1,0 +1,93 @@
+backend:
+  replicaCount: 1
+
+  image:
+    repository: ashikdv/ecommerce-backend
+    tag: latest
+    pullPolicy: Always
+
+  service:
+    type: ClusterIP
+    port: 8080
+    targetPort: 8080
+
+  containerPort: 8080
+
+  env:
+    ASPNETCORE_ENVIRONMENT: Production
+    ASPNETCORE_URLS: http://+:8080
+
+  config:
+    corsAllowedOrigin: http://localhost:5173
+    redisConnectionString: redis:6379
+
+  secret:
+    jwtKey: "CHANGE_ME"
+    jwtIssuer: "EcommerceApi"
+    jwtAudience: "EcommerceClient"
+    connectionString: "CHANGE_ME"
+
+  resources:
+    requests:
+      cpu: 100m
+      memory: 128Mi
+    limits:
+      cpu: 500m
+      memory: 512Mi
+
+  readinessProbe:
+    path: /swagger/index.html
+    initialDelaySeconds: 20
+    periodSeconds: 10
+
+  livenessProbe:
+    path: /swagger/index.html
+    initialDelaySeconds: 40
+    periodSeconds: 20
+
+
+frontend:
+  replicaCount: 1
+
+  image:
+    repository: ashikdv/ecommerce-frontend
+    tag: latest
+    pullPolicy: Always
+
+  service:
+    type: ClusterIP
+    port: 80
+    targetPort: 80
+
+  containerPort: 80
+
+  resources:
+    requests:
+      cpu: 100m
+      memory: 64Mi
+    limits:
+      cpu: 300m
+      memory: 256Mi
+
+  readinessProbe:
+    path: /
+    initialDelaySeconds: 10
+    periodSeconds: 10
+
+  livenessProbe:
+    path: /
+    initialDelaySeconds: 20
+    periodSeconds: 20
+
+
+ingress:
+  enabled: true
+
+  className: nginx
+
+  annotations:
+    nginx.ingress.kubernetes.io/proxy-body-size: "20m"
+
+  host: ecommerce.local
+
+  tls: []
