@@ -1,21 +1,61 @@
-import { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { useEffect, useState } from 'react'
+import { Link, useNavigate } from 'react-router-dom'
 import toast from 'react-hot-toast'
 import axiosInstance from '../api/axiosInstance'
 import Navbar from '../components/Navbar'
 
 export default function Checkout() {
-  const [loading, setLoading] = useState(false)
   const navigate = useNavigate()
+  const [items, setItems] = useState([])
+  const [loading, setLoading] = useState(true)
+  const [couponInput, setCouponInput] = useState('')
+  const [applied, setApplied] = useState(null)      // the preview from the server, when the coupon is valid
+  const [applying, setApplying] = useState(false)
+  const [paying, setPaying] = useState(false)
+
+  useEffect(() => {
+    axiosInstance
+      .get('/cart')
+      .then((res) => setItems(res.data))
+      .catch(() => toast.error('Could not load your cart'))
+      .finally(() => setLoading(false))
+  }, [])
+
+  const subTotal = items.reduce((sum, i) => sum + i.price * i.quantity, 0)
+  const discount = applied ? applied.discount : 0
+  const total = subTotal - discount
+
+  async function applyCoupon() {
+    if (!couponInput.trim()) return
+    setApplying(true)
+    try {
+      const res = await axiosInstance.post('/coupon/validate', { code: couponInput })
+      if (res.data.valid) {
+        setApplied(res.data)
+        toast.success(res.data.message)
+      } else {
+        setApplied(null)
+        toast.error(res.data.message)
+      }
+    } catch (err) {
+      toast.error(err.response?.data?.message || 'Could not check the coupon')
+    } finally {
+      setApplying(false)
+    }
+  }
+
+  function removeCoupon() {
+    setApplied(null)
+    setCouponInput('')
+  }
 
   async function handlePayNow() {
-    setLoading(true)
+    setPaying(true)
     try {
-      // Step 1: ask OUR backend to create a Razorpay order
-      const res = await axiosInstance.post('/order/create')
+      // the server prices the cart again and re-checks the coupon: it never trusts the numbers on this page
+      const res = await axiosInstance.post('/order/create', { couponCode: applied ? applied.code : null })
       const { razorpayOrderId, keyId, amountInPaise } = res.data
 
-      // Step 2: open RAZORPAY'S popup, using their config shape
       const options = {
         key: keyId,
         amount: amountInPaise,
@@ -23,7 +63,6 @@ export default function Checkout() {
         name: 'Ecommerce App',
         order_id: razorpayOrderId,
         handler: async function (response) {
-          // Step 3: Razorpay's popup succeeded - send its proof to OUR backend to verify
           try {
             await axiosInstance.post('/order/verify', {
               razorpayOrderId: response.razorpay_order_id,
@@ -33,18 +72,17 @@ export default function Checkout() {
             toast.success('Order placed successfully!')
             navigate('/orders')
           } catch (err) {
-            toast.error('Payment verification failed.')
+            toast.error(err.response?.data?.message || 'Payment verification failed')
           }
         },
+        modal: { ondismiss: () => toast('Payment cancelled') },
         theme: { color: '#4f46e5' },
       }
-
-      const rzp = new window.Razorpay(options)
-      rzp.open()
+      new window.Razorpay(options).open()
     } catch (err) {
-      toast.error(err.response?.data?.message || 'Could not start checkout.')
+      toast.error(err.response?.data?.message || 'Could not start checkout')
     } finally {
-      setLoading(false)
+      setPaying(false)
     }
   }
 
@@ -53,10 +91,54 @@ export default function Checkout() {
       <Navbar />
       <div className="home-page user-theme">
         <h1>Checkout</h1>
-        <p>Click below to pay securely via Razorpay (Test Mode).</p>
-        <button className="add-to-cart-btn" onClick={handlePayNow} disabled={loading}>
-          {loading ? 'Starting...' : 'Pay Now'}
-        </button>
+
+        {loading ? (
+          <p>Loading...</p>
+        ) : items.length === 0 ? (
+          <p>Your cart is empty. <Link to="/products">Browse products</Link></p>
+        ) : (
+          <div className="checkout-panel">
+            <ul className="checkout-items">
+              {items.map((i, idx) => (
+                <li key={idx}>
+                  {i.name} × {i.quantity}
+                  <span>₹{(i.price * i.quantity).toLocaleString()}</span>
+                </li>
+              ))}
+            </ul>
+
+            <div className="coupon-row">
+              <input
+                placeholder="Coupon code"
+                value={couponInput}
+                onChange={(e) => setCouponInput(e.target.value)}
+                disabled={!!applied}
+              />
+              {applied ? (
+                <button className="cancel-btn" onClick={removeCoupon}>Remove</button>
+              ) : (
+                <button className="edit-btn" onClick={applyCoupon} disabled={applying}>
+                  {applying ? 'Checking...' : 'Apply'}
+                </button>
+              )}
+            </div>
+
+            <div className="price-lines">
+              <p><span>Subtotal</span><span>₹{subTotal.toLocaleString()}</span></p>
+              {applied && (
+                <p className="discount-line">
+                  <span>Discount ({applied.code})</span>
+                  <span>-₹{discount.toLocaleString()}</span>
+                </p>
+              )}
+              <p className="total-line"><span>Total</span><span>₹{total.toLocaleString()}</span></p>
+            </div>
+
+            <button className="add-to-cart-btn" onClick={handlePayNow} disabled={paying}>
+              {paying ? 'Starting...' : `Pay ₹${total.toLocaleString()}`}
+            </button>
+          </div>
+        )}
       </div>
     </div>
   )

@@ -9,6 +9,7 @@ using Serilog;
 using EcommerceApi.Services.Logging;
 using EcommerceApi.Middleware;
 using Microsoft.AspNetCore.RateLimiting;
+using EcommerceApi.Services.Coupons;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -46,7 +47,16 @@ builder.Services.AddRateLimiter(options =>
     });
 
     options.RejectionStatusCode = 429;    // "Too Many Requests" status code
+
+    options.AddFixedWindowLimiter("coupon", opt =>
+    {
+        opt.PermitLimit = 20;
+        opt.Window = TimeSpan.FromMinutes(1);
+        opt.QueueLimit = 0;
+    });
 });
+
+
 
 
 builder.Services.AddStackExchangeRedisCache(options =>
@@ -55,7 +65,7 @@ builder.Services.AddStackExchangeRedisCache(options =>
 });
 
 // --- Switchable logging: File or Database, based on appsettings.json ---
-   // add this to your top "using" list too
+// add this to your top "using" list too
 var loggingProvider = builder.Configuration["LoggingSettings:Provider"];
 
 if (loggingProvider == "Database")
@@ -86,6 +96,7 @@ builder.Services.AddCors(options =>
     });
 });
 
+builder.Services.AddScoped<ICouponService, CouponService>();
 // --- JWT Authentication ---
 // This configures HOW the server validates a token that arrives on a request:
 // same secret key, issuer, and audience that JwtHelper used to CREATE the token.
@@ -94,7 +105,7 @@ builder.Services.AddAuthentication(options =>
 {
     options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
     options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
-})  
+})
 .AddJwtBearer(options =>
 {
     options.TokenValidationParameters = new TokenValidationParameters

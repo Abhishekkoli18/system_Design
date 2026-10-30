@@ -16,6 +16,8 @@ namespace EcommerceApi.Models
 
         public int Quantity { get; set; }
 
+        public List<Review> Reviews { get; set; } = new();
+
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
     }
 }

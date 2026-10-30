@@ -25,6 +25,7 @@ export default function Navbar() {
         {isAdmin && <Link to="/admin-home" className="nav-link">Dashboard</Link>}
 
         <Link to="/products" className="nav-link">Products</Link>
+        {isAdmin && <Link to="/admin-coupons" className="nav-link">Coupons</Link>}
 
         {!isAdmin && (
           <>

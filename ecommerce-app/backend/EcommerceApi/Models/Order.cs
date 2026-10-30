@@ -15,6 +15,11 @@ namespace EcommerceApi.Models
 
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
 
+        public decimal SubTotal { get; set; }          // before the discount
+        public decimal DiscountAmount { get; set; }
+        public string? CouponCode { get; set; }
+        public int? CouponId { get; set; }
+
         public List<OrderItem> Items { get; set; } = new();
     }
 }

@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Caching.Distributed;
 using System.Text.Json;
+using System.Linq.Expressions;
 
 namespace EcommerceApi.Controllers
 {
@@ -15,6 +16,17 @@ namespace EcommerceApi.Controllers
     [Authorize]                   // must be logged in for everything in this controller
     public class ProductController : ControllerBase
     {
+        // One shared Product -> DTO mapping that EF Core turns into SQL
+        private static readonly Expression<Func<Product, ProductResponseDto>> ToDto = p => new ProductResponseDto
+        {
+            Id = p.Id,
+            Name = p.Name,
+            Description = p.Description,
+            ImageUrl = p.ImageUrl,
+            Category = p.Category,
+            Price = p.Price,
+            Quantity = p.Quantity
+        };
         private readonly AppDbContext _db;
         private readonly ILogger<ProductController> _logger;
 
@@ -39,7 +51,7 @@ namespace EcommerceApi.Controllers
         // GET /api/product?inStockOnly=true
         // All filters are optional and can be combined. Any logged-in user can view.
         [HttpGet]
-        [HttpGet]
+        // [HttpGet]
         public async Task<IActionResult> GetAll(
             [FromQuery] string? search,
             [FromQuery] decimal? minPrice,
@@ -82,7 +94,9 @@ namespace EcommerceApi.Controllers
                     ImageUrl = p.ImageUrl,
                     Category = p.Category,
                     Price = p.Price,
-                    Quantity = p.Quantity
+                    Quantity = p.Quantity,
+                    AverageRating = Math.Round(p.Reviews.Average(r => (double?)r.Rating) ?? 0, 1),
+                    ReviewCount = p.Reviews.Count()
                 })
                 .ToListAsync();
 
@@ -122,7 +136,48 @@ namespace EcommerceApi.Controllers
             );
 
             return Ok(categories);
-        }   
+        }
+        // GET /api/product/5   -> one product
+        [HttpGet("{id:int}")]
+        public async Task<IActionResult> GetById(int id)
+        {
+            var product = await _db.Products
+                .Where(p => p.Id == id)
+                .Select(ToDto)
+                .FirstOrDefaultAsync();
+
+            if (product == null)
+                return NotFound(new { message = "Product not found." });
+
+            return Ok(product);
+        }
+
+        // GET /api/product/5/related?count=6   -> same category, closest price first
+        [HttpGet("{id:int}/related")]
+        public async Task<IActionResult> GetRelated(int id, [FromQuery] int count = 6)
+        {
+            count = Math.Clamp(count, 1, 12);
+
+            var source = await _db.Products
+                .Where(p => p.Id == id)
+                .Select(p => new { p.Category, p.Price })
+                .FirstOrDefaultAsync();
+
+            if (source == null)
+                return NotFound(new { message = "Product not found." });
+
+            if (string.IsNullOrWhiteSpace(source.Category))
+                return Ok(new List<ProductResponseDto>());   // no category, so nothing to match on
+
+            var related = await _db.Products
+                .Where(p => p.Id != id && p.Quantity > 0 && p.Category == source.Category)
+                .OrderBy(p => Math.Abs(p.Price - source.Price))   // closest price first
+                .Take(count)
+                .Select(ToDto)
+                .ToListAsync();
+
+            return Ok(related);
+        }
 
         // POST /api/product/add
         // Manual single-product add. Admin only.

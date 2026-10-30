@@ -9,6 +9,8 @@ import Cart from './pages/Cart'
 import ProtectedRoute from './components/ProtectedRoute'
 import Checkout from './pages/Checkout'
 import OrderHistory from './pages/OrderHistory'
+import ProductDetail from './pages/ProductDetail'
+import AdminCoupons from './pages/AdminCoupons'
 
 function App() {
   return (
@@ -30,6 +32,8 @@ function App() {
           }
         />
 
+        <Route path="/admin-coupons" element={<ProtectedRoute role="Admin"><AdminCoupons /></ProtectedRoute>} />
+
         {/* No role restriction on purpose - both User and Admin can browse products and use the cart */}
         <Route
           path="/products"
@@ -45,6 +49,15 @@ function App() {
           element={
             <ProtectedRoute>
               <Cart />
+            </ProtectedRoute>
+          }
+        />
+
+        <Route
+          path="/products/:id"
+          element={
+            <ProtectedRoute>
+              <ProductDetail />
             </ProtectedRoute>
           }
         />

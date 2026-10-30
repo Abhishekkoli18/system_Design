@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { useNavigate, Link } from 'react-router-dom'
 import axiosInstance from '../api/axiosInstance'
 import { useAuth } from '../context/AuthContext'
+import toast from 'react-hot-toast'
 
 export default function Register() {
   const [fullName, setFullName] = useState('')
@@ -31,7 +32,7 @@ export default function Register() {
     try {
       const response = await axiosInstance.post('/auth/register', { fullName, email, password })
       login(response.data)
-      toast.success('Account created successfully!')
+      toast.success('Account created successfully!')  
       navigate(response.data.role === 'Admin' ? '/admin-home' : '/user-home')
     } catch (err) {
       const message = err.response?.data?.message || 'Registration failed. Try again.'

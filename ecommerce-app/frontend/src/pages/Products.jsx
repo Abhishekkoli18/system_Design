@@ -1,8 +1,10 @@
 import { useEffect, useState } from 'react'
 import axiosInstance from '../api/axiosInstance'
 import Navbar from '../components/Navbar'
+import StarRating from '../components/StarRating'
 import toast from 'react-hot-toast'
 import { getPageNumbers } from '../utils/pagination'
+import { Link } from 'react-router-dom'
 
 export default function Products() {
   const [products, setProducts] = useState([])
@@ -121,7 +123,7 @@ export default function Products() {
           value={searchTerm}
           onChange={(e) => { setSearchTerm(e.target.value); setPageNumber(1) }}
           className="search-input"
-        />  
+        />
 
         <div className="filter-bar">
           <input
@@ -168,15 +170,21 @@ export default function Products() {
           <div className="product-grid">
             {products.map((p) => (
               <div className="product-card" key={p.id}>
-                <div className="product-image-wrap">
-                  {p.imageUrl ? (
-                    <img src={p.imageUrl} alt={p.name} className="product-image" />
-                  ) : (
-                    <div className="product-image-placeholder">No image</div>
+                <Link to={`/products/${p.id}`} className="card-link">
+                  <div className="product-image-wrap">
+                    {p.imageUrl ? (
+                      <img src={p.imageUrl} alt={p.name} className="product-image" />
+                    ) : (
+                      <div className="product-image-placeholder">No image</div>
+                    )}
+                  </div>
+                  <h3>{p.name}</h3>
+                  {p.reviewCount > 0 && (
+                    <p className="product-rating">
+                      <StarRating value={p.averageRating} size={14} /> {p.averageRating} ({p.reviewCount})
+                    </p>
                   )}
-                </div>
-
-                <h3>{p.name}</h3>
+                </Link>
                 {p.category && <p className="product-category">{p.category}</p>}
                 <p className="product-desc">{p.description}</p>
                 <p className="product-price">₹{p.price.toLocaleString()}</p>

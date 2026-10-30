@@ -24,6 +24,10 @@ namespace EcommerceApi.Data
         public DbSet<Order> Orders { get; set; }
         public DbSet<OrderItem> OrderItems { get; set; }
 
+        public DbSet<Review> Reviews { get; set; }
+        public DbSet<Coupon> Coupons { get; set; }
+        public DbSet<CouponRedemption> CouponRedemptions { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
@@ -39,6 +43,26 @@ namespace EcommerceApi.Data
                 .HasOne(c => c.Product)
                 .WithMany()
                 .HasForeignKey(c => c.ProductId);
+
+            modelBuilder.Entity<Review>(e =>
+            {
+                e.HasIndex(r => new { r.ProductId, r.UserId }).IsUnique();     // one review per user per product
+                e.HasOne(r => r.Product).WithMany(p => p.Reviews).HasForeignKey(r => r.ProductId);
+                e.HasOne(r => r.User).WithMany().HasForeignKey(r => r.UserId);
+            });
+
+            modelBuilder.Entity<Coupon>().HasIndex(c => c.Code).IsUnique();
+            modelBuilder.Entity<Coupon>().Property(c => c.Value).HasPrecision(18, 2);
+            modelBuilder.Entity<Coupon>().Property(c => c.MaxDiscount).HasPrecision(18, 2);
+            modelBuilder.Entity<Coupon>().Property(c => c.MinOrderAmount).HasPrecision(18, 2);
+
+            modelBuilder.Entity<CouponRedemption>().HasIndex(r => new { r.CouponId, r.UserId }).IsUnique();  // once per user
+            modelBuilder.Entity<CouponRedemption>().HasOne(r => r.Coupon).WithMany().HasForeignKey(r => r.CouponId);
+            modelBuilder.Entity<CouponRedemption>().Property(r => r.DiscountAmount).HasPrecision(18, 2);
+
+            modelBuilder.Entity<Order>().HasIndex(o => o.RazorpayOrderId);   // verify finds the order by this
+            modelBuilder.Entity<Order>().Property(o => o.SubTotal).HasPrecision(18, 2);
+            modelBuilder.Entity<Order>().Property(o => o.DiscountAmount).HasPrecision(18, 2);
         }
     }
 }

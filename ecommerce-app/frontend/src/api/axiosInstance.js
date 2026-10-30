@@ -2,7 +2,7 @@ import axios from 'axios'
 
 // Change this if your backend runs on a different port.
 // Check the terminal output when you run "dotnet run" - it prints the actual URL.
-const BASE_URL = 'http://localhost/api'
+const BASE_URL = 'http://localhost:5000/api'
 
 const axiosInstance = axios.create({
   baseURL: BASE_URL,
