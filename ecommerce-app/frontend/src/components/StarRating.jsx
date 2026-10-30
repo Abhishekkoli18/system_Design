@@ -1,5 +1,5 @@
 // Display mode: <StarRating value={4.3} />
-// Input mode:   <StarRating value={rating} onChange={setRating} />
+// Input mode:   <StarRating value={rating} dddd onChange={setRating} />
 export default function StarRating({ value = 0, onChange, size = 18 }) {
   return (
     <span className="stars" aria-label={`${value} out of 5 stars`}>
