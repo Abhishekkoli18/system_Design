@@ -1,0 +1,43 @@
+[2026-09-09 12:46:52] Login attempt for abhi1234@gmail.com
+[2026-09-09 12:48:20] Login attempt for admin@ecommerce.com
+[2026-09-09 14:04:29] Login attempt for abhi1234@gmail.com
+[2026-09-09 14:12:48] Login attempt for admin@ecommerce.com
+[2026-09-09 14:13:08] Login attempt for new1234@gmail.com
+[2026-09-10 09:52:04] CorrelationId: 532d35be | OPTIONS /api/auth/login | Status: 204 | Duration: 32ms | IP: ::1 | Started: 2026-09-10 09:52:04
+[2026-09-10 09:52:06] CorrelationId: ec82296c | POST /api/auth/login | Status: 200 | Duration: 1562ms | IP: ::1 | Started: 2026-09-10 09:52:04
+[2026-09-10 09:52:06] CorrelationId: 0ff7725d | OPTIONS /api/home/user | Status: 204 | Duration: 18ms | IP: ::1 | Started: 2026-09-10 09:52:06
+[2026-09-10 09:52:06] CorrelationId: 65cacce2 | OPTIONS /api/product | Status: 204 | Duration: 14ms | IP: ::1 | Started: 2026-09-10 09:52:06
+[2026-09-10 09:52:06] CorrelationId: c19339cf | OPTIONS /api/home/user | Status: 204 | Duration: 9ms | IP: ::1 | Started: 2026-09-10 09:52:06
+[2026-09-10 09:52:06] CorrelationId: de8106fa | OPTIONS /api/product | Status: 204 | Duration: 7ms | IP: ::1 | Started: 2026-09-10 09:52:06
+[2026-09-10 09:52:06] CorrelationId: 327ef8a8 | GET /api/home/user | Status: 200 | Duration: 184ms | IP: ::1 | Started: 2026-09-10 09:52:06
+[2026-09-10 09:52:06] CorrelationId: 43a47b0b | GET /api/home/user | Status: 200 | Duration: 142ms | IP: ::1 | Started: 2026-09-10 09:52:06
+[2026-09-10 09:52:07] CorrelationId: 9d9e887a | GET /api/product | Status: 200 | Duration: 482ms | IP: ::1 | Started: 2026-09-10 09:52:06
+[2026-09-10 09:52:08] CorrelationId: f2f475e5 | OPTIONS /api/product/categories | Status: 204 | Duration: 26ms | IP: ::1 | Started: 2026-09-10 09:52:08
+[2026-09-10 09:52:08] CorrelationId: afe67e22 | OPTIONS /api/product/categories | Status: 204 | Duration: 15ms | IP: ::1 | Started: 2026-09-10 09:52:08
+[2026-09-10 09:52:09] CorrelationId: ee08d2af | GET /api/product | Status: 200 | Duration: 105ms | IP: ::1 | Started: 2026-09-10 09:52:08
+[2026-09-10 09:52:09] CorrelationId: 938f52d3 | GET /api/product | Status: 200 | Duration: 46ms | IP: ::1 | Started: 2026-09-10 09:52:08
+[2026-09-10 09:52:09] CorrelationId: 111ea37f | GET /api/product/categories | Status: 200 | Duration: 113ms | IP: ::1 | Started: 2026-09-10 09:52:08
+[2026-09-10 09:52:09] CorrelationId: 450bcaab | GET /api/product | Status: 200 | Duration: 59ms | IP: ::1 | Started: 2026-09-10 09:52:09
+[2026-09-10 09:52:09] CorrelationId: 69bab25c | GET /api/product/categories | Status: 200 | Duration: 44ms | IP: ::1 | Started: 2026-09-10 09:52:09
+[2026-09-10 09:52:23] CorrelationId: 05502b5d | OPTIONS /api/auth/login | Status: 204 | Duration: 3ms | IP: ::1 | Started: 2026-09-10 09:52:23
+[2026-09-10 09:52:23] CorrelationId: 097cf456 | POST /api/auth/login | Status: 401 | Duration: 33ms | IP: ::1 | Started: 2026-09-10 09:52:23
+[2026-09-10 09:52:29] CorrelationId: 43377d4a | OPTIONS /api/auth/login | Status: 204 | Duration: 1ms | IP: ::1 | Started: 2026-09-10 09:52:29
+[2026-09-10 09:52:29] CorrelationId: 54802e1d | POST /api/auth/login | Status: 200 | Duration: 292ms | IP: ::1 | Started: 2026-09-10 09:52:29
+[2026-09-10 09:52:29] CorrelationId: 6081d3f6 | OPTIONS /api/product | Status: 204 | Duration: 16ms | IP: ::1 | Started: 2026-09-10 09:52:29
+[2026-09-10 09:52:29] CorrelationId: 5f5e72ad | OPTIONS /api/home/user | Status: 204 | Duration: 12ms | IP: ::1 | Started: 2026-09-10 09:52:29
+[2026-09-10 09:52:29] CorrelationId: 1e3f68d9 | OPTIONS /api/home/user | Status: 204 | Duration: 15ms | IP: ::1 | Started: 2026-09-10 09:52:29
+[2026-09-10 09:52:29] CorrelationId: 58cae98a | OPTIONS /api/product | Status: 204 | Duration: 12ms | IP: ::1 | Started: 2026-09-10 09:52:29
+[2026-09-10 09:52:29] CorrelationId: 040150a0 | GET /api/home/user | Status: 200 | Duration: 33ms | IP: ::1 | Started: 2026-09-10 09:52:29
+[2026-09-10 09:52:29] CorrelationId: 0b9b91e6 | GET /api/product | Status: 200 | Duration: 60ms | IP: ::1 | Started: 2026-09-10 09:52:29
+[2026-09-10 09:52:29] CorrelationId: 3ab1aff4 | GET /api/home/user | Status: 200 | Duration: 129ms | IP: ::1 | Started: 2026-09-10 09:52:29
+[2026-09-10 09:52:30] CorrelationId: 125bc6db | GET /api/product | Status: 200 | Duration: 201ms | IP: ::1 | Started: 2026-09-10 09:52:29
+[2026-09-10 09:52:31] CorrelationId: 1f5bd5eb | OPTIONS /api/product/categories | Status: 204 | Duration: 13ms | IP: ::1 | Started: 2026-09-10 09:52:31
+[2026-09-10 09:52:31] CorrelationId: e08dfe96 | OPTIONS /api/product/categories | Status: 204 | Duration: 12ms | IP: ::1 | Started: 2026-09-10 09:52:31
+[2026-09-10 09:52:31] CorrelationId: 5b9d423a | GET /api/product | Status: 200 | Duration: 62ms | IP: ::1 | Started: 2026-09-10 09:52:31
+[2026-09-10 09:52:31] CorrelationId: db756c52 | GET /api/product/categories | Status: 200 | Duration: 67ms | IP: ::1 | Started: 2026-09-10 09:52:31
+[2026-09-10 09:52:31] CorrelationId: 9f55e69d | GET /api/product | Status: 200 | Duration: 85ms | IP: ::1 | Started: 2026-09-10 09:52:31
+[2026-09-10 09:52:31] CorrelationId: 59f5a466 | GET /api/product/categories | Status: 200 | Duration: 73ms | IP: ::1 | Started: 2026-09-10 09:52:31
+[2026-09-10 09:52:39] CorrelationId: ecea8eb0 | OPTIONS /api/cart/add | Status: 204 | Duration: 1ms | IP: ::1 | Started: 2026-09-10 09:52:39
+[2026-09-10 09:52:39] CorrelationId: 528e98a7 | POST /api/cart/add | Status: 200 | Duration: 453ms | IP: ::1 | Started: 2026-09-10 09:52:39
+[2026-09-10 09:52:42] CorrelationId: 7eb4f01d | POST /api/cart/add | Status: 200 | Duration: 174ms | IP: ::1 | Started: 2026-09-10 09:52:42
+[2026-09-10 09:52:43] CorrelationId: 730808eb | POST /api/cart/add | Status: 200 | Duration: 85ms | IP: ::1 | Started: 2026-09-10 09:52:43
