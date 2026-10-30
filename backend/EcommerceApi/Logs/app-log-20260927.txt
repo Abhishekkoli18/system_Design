@@ -1,0 +1,1818 @@
+2026-09-27 10:52:00.011 +05:30 [WRN] No store type was specified for the decimal property 'TotalAmount' on entity type 'Order'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-09-27 10:52:00.122 +05:30 [WRN] No store type was specified for the decimal property 'Price' on entity type 'OrderItem'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-09-27 10:52:00.126 +05:30 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-09-27 10:52:01.616 +05:30 [INF] Executed DbCommand (54ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]
+        WHERE [u].[Role] = N'Admin') THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2026-09-27 10:52:02.176 +05:30 [INF] User profile is available. Using 'C:\Users\ASUS\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-09-27 10:52:02.323 +05:30 [INF] Now listening on: http://localhost:5000
+2026-09-27 10:52:02.328 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-09-27 10:52:02.331 +05:30 [INF] Hosting environment: Production
+2026-09-27 10:52:02.333 +05:30 [INF] Content root path: C:\Users\ASUS\Downloads\EcommerceApp\EcommerceApp\backend\EcommerceApi
+2026-09-27 10:52:33.444 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/product/categories - null null
+2026-09-27 10:52:33.444 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/product/categories - null null
+2026-09-27 10:52:33.444 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/product?pageNumber=1&pageSize=12 - null null
+2026-09-27 10:52:33.444 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/product?pageNumber=1&pageSize=12 - null null
+2026-09-27 10:52:33.524 +05:30 [INF] CORS policy execution successful.
+2026-09-27 10:52:33.524 +05:30 [INF] CORS policy execution successful.
+2026-09-27 10:52:33.524 +05:30 [INF] CORS policy execution successful.
+2026-09-27 10:52:33.524 +05:30 [INF] CORS policy execution successful.
+2026-09-27 10:52:33.934 +05:30 [INF] Executed DbCommand (67ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 10:52:33.934 +05:30 [INF] Executed DbCommand (69ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 10:52:33.934 +05:30 [INF] Executed DbCommand (63ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 10:52:33.934 +05:30 [INF] Executed DbCommand (57ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 10:52:34.026 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/product?pageNumber=1&pageSize=12 - 204 null null 584.7035ms
+2026-09-27 10:52:34.026 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/product?pageNumber=1&pageSize=12 - 204 null null 584.7095ms
+2026-09-27 10:52:34.026 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/product/categories - 204 null null 584.6875ms
+2026-09-27 10:52:34.026 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/product/categories - 204 null null 584.6776ms
+2026-09-27 10:52:34.039 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/product/categories - null null
+2026-09-27 10:52:34.055 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/product?pageNumber=1&pageSize=12 - null null
+2026-09-27 10:52:34.067 +05:30 [INF] CORS policy execution successful.
+2026-09-27 10:52:34.067 +05:30 [INF] CORS policy execution successful.
+2026-09-27 10:52:34.209 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '26-09-2026 14:42:11', Current time (UTC): '27-09-2026 05:22:34'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2026-09-27 10:52:34.209 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '26-09-2026 14:42:11', Current time (UTC): '27-09-2026 05:22:34'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2026-09-27 10:52:34.248 +05:30 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '26-09-2026 14:42:11', Current time (UTC): '27-09-2026 05:22:34'.
+2026-09-27 10:52:34.250 +05:30 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '26-09-2026 14:42:11', Current time (UTC): '27-09-2026 05:22:34'.
+2026-09-27 10:52:34.258 +05:30 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2026-09-27 10:52:34.262 +05:30 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2026-09-27 10:52:34.262 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-09-27 10:52:34.273 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-09-27 10:52:34.363 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 10:52:34.363 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 10:52:34.372 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/product?pageNumber=1&pageSize=12 - 401 0 null 316.8438ms
+2026-09-27 10:52:34.376 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/product/categories - 405 0 null 336.9334ms
+2026-09-27 10:52:34.391 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/product?pageNumber=1&pageSize=12 - null null
+2026-09-27 10:52:34.397 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/product/categories - null null
+2026-09-27 10:52:34.404 +05:30 [INF] CORS policy execution successful.
+2026-09-27 10:52:34.408 +05:30 [INF] CORS policy execution successful.
+2026-09-27 10:52:34.412 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '26-09-2026 14:42:11', Current time (UTC): '27-09-2026 05:22:34'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2026-09-27 10:52:34.412 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '26-09-2026 14:42:11', Current time (UTC): '27-09-2026 05:22:34'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2026-09-27 10:52:34.417 +05:30 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '26-09-2026 14:42:11', Current time (UTC): '27-09-2026 05:22:34'.
+2026-09-27 10:52:34.420 +05:30 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '26-09-2026 14:42:11', Current time (UTC): '27-09-2026 05:22:34'.
+2026-09-27 10:52:34.422 +05:30 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2026-09-27 10:52:34.426 +05:30 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2026-09-27 10:52:34.426 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-09-27 10:52:34.430 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-09-27 10:52:34.432 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 10:52:34.437 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 10:52:34.438 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/product/categories - 405 0 null 40.6851ms
+2026-09-27 10:52:34.442 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/product?pageNumber=1&pageSize=12 - 401 0 null 50.9879ms
+2026-09-27 10:52:43.134 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/auth/login - null null
+2026-09-27 10:52:43.152 +05:30 [INF] CORS policy execution successful.
+2026-09-27 10:52:43.160 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 10:52:43.165 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/auth/login - 204 null null 31.8979ms
+2026-09-27 10:52:43.173 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/auth/login - application/json 50
+2026-09-27 10:52:43.180 +05:30 [INF] CORS policy execution successful.
+2026-09-27 10:52:43.182 +05:30 [INF] Executing endpoint 'EcommerceApi.Controllers.AuthController.Login (EcommerceApi)'
+2026-09-27 10:52:43.248 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(EcommerceApi.DTOs.LoginDto) on controller EcommerceApi.Controllers.AuthController (EcommerceApi).
+2026-09-27 10:52:43.390 +05:30 [INF] Login attempt for abhi1234@gmail.com
+2026-09-27 10:52:43.469 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[@__dto_Email_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreatedAt], [u].[Email], [u].[FullName], [u].[PasswordHash], [u].[Role]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__dto_Email_0
+2026-09-27 10:52:44.421 +05:30 [INF] Login succeeded for abhi1234@gmail.com, role User
+2026-09-27 10:52:44.433 +05:30 [INF] Executing OkObjectResult, writing value of type 'EcommerceApi.DTOs.AuthResponseDto'.
+2026-09-27 10:52:44.462 +05:30 [INF] Executed action EcommerceApi.Controllers.AuthController.Login (EcommerceApi) in 1205.9526ms
+2026-09-27 10:52:44.466 +05:30 [INF] Executed endpoint 'EcommerceApi.Controllers.AuthController.Login (EcommerceApi)'
+2026-09-27 10:52:44.482 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 10:52:44.486 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/auth/login - 200 null application/json; charset=utf-8 1312.9112ms
+2026-09-27 10:52:44.509 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/home/user - null null
+2026-09-27 10:52:44.509 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/product?pageSize=1000 - null null
+2026-09-27 10:52:44.509 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/home/user - null null
+2026-09-27 10:52:44.510 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/product?pageSize=1000 - null null
+2026-09-27 10:52:44.517 +05:30 [INF] CORS policy execution successful.
+2026-09-27 10:52:44.522 +05:30 [INF] CORS policy execution successful.
+2026-09-27 10:52:44.529 +05:30 [INF] CORS policy execution successful.
+2026-09-27 10:52:44.533 +05:30 [INF] CORS policy execution successful.
+2026-09-27 10:52:44.538 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 10:52:44.539 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 10:52:44.540 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 10:52:44.542 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 10:52:44.544 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/home/user - 204 null null 34.7788ms
+2026-09-27 10:52:44.547 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/product?pageSize=1000 - 204 null null 38.0794ms
+2026-09-27 10:52:44.551 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/home/user - 204 null null 41.6054ms
+2026-09-27 10:52:44.555 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/product?pageSize=1000 - 204 null null 45.7913ms
+2026-09-27 10:52:44.561 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/home/user - null null
+2026-09-27 10:52:44.566 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/product?pageSize=1000 - null null
+2026-09-27 10:52:44.584 +05:30 [INF] CORS policy execution successful.
+2026-09-27 10:52:44.589 +05:30 [INF] CORS policy execution successful.
+2026-09-27 10:52:44.606 +05:30 [INF] Executing endpoint 'EcommerceApi.Controllers.HomeController.UserHome (EcommerceApi)'
+2026-09-27 10:52:44.606 +05:30 [INF] Executing endpoint 'EcommerceApi.Controllers.ProductController.GetAll (EcommerceApi)'
+2026-09-27 10:52:44.611 +05:30 [INF] Route matched with {action = "UserHome", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult UserHome() on controller EcommerceApi.Controllers.HomeController (EcommerceApi).
+2026-09-27 10:52:44.617 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-09-27 10:52:44.619 +05:30 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(System.String, System.Nullable`1[System.Decimal], System.Nullable`1[System.Decimal], System.String, System.Nullable`1[System.Boolean], Int32, Int32) on controller EcommerceApi.Controllers.ProductController (EcommerceApi).
+2026-09-27 10:52:44.637 +05:30 [INF] Executed action EcommerceApi.Controllers.HomeController.UserHome (EcommerceApi) in 21.5751ms
+2026-09-27 10:52:44.639 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/home/user - null null
+2026-09-27 10:52:44.640 +05:30 [INF] Executed endpoint 'EcommerceApi.Controllers.HomeController.UserHome (EcommerceApi)'
+2026-09-27 10:52:44.644 +05:30 [INF] CORS policy execution successful.
+2026-09-27 10:52:44.648 +05:30 [INF] Executing endpoint 'EcommerceApi.Controllers.HomeController.UserHome (EcommerceApi)'
+2026-09-27 10:52:44.649 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 10:52:44.650 +05:30 [INF] Route matched with {action = "UserHome", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult UserHome() on controller EcommerceApi.Controllers.HomeController (EcommerceApi).
+2026-09-27 10:52:44.655 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/home/user - 200 null application/json; charset=utf-8 94.8377ms
+2026-09-27 10:52:44.659 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-09-27 10:52:44.707 +05:30 [INF] Executed action EcommerceApi.Controllers.HomeController.UserHome (EcommerceApi) in 48.5694ms
+2026-09-27 10:52:44.725 +05:30 [INF] Executed endpoint 'EcommerceApi.Controllers.HomeController.UserHome (EcommerceApi)'
+2026-09-27 10:52:44.736 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 10:52:44.741 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/home/user - 200 null application/json; charset=utf-8 101.9802ms
+2026-09-27 10:52:44.744 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Products] AS [p]
+2026-09-27 10:52:44.785 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name], [p].[Description], [p].[ImageUrl], [p].[Category], [p].[Price], [p].[Quantity]
+FROM [Products] AS [p]
+ORDER BY [p].[CreatedAt] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2026-09-27 10:52:44.799 +05:30 [INF] Executing OkObjectResult, writing value of type 'EcommerceApi.DTOs.PagedResultDto`1[[EcommerceApi.DTOs.ProductResponseDto, EcommerceApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-27 10:52:44.830 +05:30 [INF] Executed action EcommerceApi.Controllers.ProductController.GetAll (EcommerceApi) in 206.785ms
+2026-09-27 10:52:44.833 +05:30 [INF] Executed endpoint 'EcommerceApi.Controllers.ProductController.GetAll (EcommerceApi)'
+2026-09-27 10:52:44.835 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/product?pageSize=1000 - null null
+2026-09-27 10:52:44.839 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 10:52:44.842 +05:30 [INF] CORS policy execution successful.
+2026-09-27 10:52:44.846 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/product?pageSize=1000 - 200 null application/json; charset=utf-8 279.8124ms
+2026-09-27 10:52:44.848 +05:30 [INF] Executing endpoint 'EcommerceApi.Controllers.ProductController.GetAll (EcommerceApi)'
+2026-09-27 10:52:44.856 +05:30 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(System.String, System.Nullable`1[System.Decimal], System.Nullable`1[System.Decimal], System.String, System.Nullable`1[System.Boolean], Int32, Int32) on controller EcommerceApi.Controllers.ProductController (EcommerceApi).
+2026-09-27 10:52:44.864 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Products] AS [p]
+2026-09-27 10:52:44.876 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name], [p].[Description], [p].[ImageUrl], [p].[Category], [p].[Price], [p].[Quantity]
+FROM [Products] AS [p]
+ORDER BY [p].[CreatedAt] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2026-09-27 10:52:44.883 +05:30 [INF] Executing OkObjectResult, writing value of type 'EcommerceApi.DTOs.PagedResultDto`1[[EcommerceApi.DTOs.ProductResponseDto, EcommerceApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-27 10:52:44.887 +05:30 [INF] Executed action EcommerceApi.Controllers.ProductController.GetAll (EcommerceApi) in 27.6046ms
+2026-09-27 10:52:44.890 +05:30 [INF] Executed endpoint 'EcommerceApi.Controllers.ProductController.GetAll (EcommerceApi)'
+2026-09-27 10:52:44.895 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 10:52:44.900 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/product?pageSize=1000 - 200 null application/json; charset=utf-8 65.2521ms
+2026-09-27 10:52:46.805 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/product/categories - null null
+2026-09-27 10:52:46.805 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/product?pageNumber=1&pageSize=12 - null null
+2026-09-27 10:52:46.806 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/product/categories - null null
+2026-09-27 10:52:46.806 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/product?pageNumber=1&pageSize=12 - null null
+2026-09-27 10:52:46.837 +05:30 [INF] CORS policy execution successful.
+2026-09-27 10:52:46.845 +05:30 [INF] CORS policy execution successful.
+2026-09-27 10:52:46.853 +05:30 [INF] CORS policy execution successful.
+2026-09-27 10:52:46.869 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 10:52:46.865 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 10:52:46.860 +05:30 [INF] CORS policy execution successful.
+2026-09-27 10:52:46.872 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 10:52:46.879 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/product?pageNumber=1&pageSize=12 - 204 null null 73.4686ms
+2026-09-27 10:52:46.883 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/product/categories - 204 null null 77.6029ms
+2026-09-27 10:52:46.890 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 10:52:46.892 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/product/categories - 204 null null 86.725ms
+2026-09-27 10:52:46.900 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/product?pageNumber=1&pageSize=12 - null null
+2026-09-27 10:52:46.912 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/product/categories - null null
+2026-09-27 10:52:46.918 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/product?pageNumber=1&pageSize=12 - 204 null null 112.1282ms
+2026-09-27 10:52:46.932 +05:30 [INF] CORS policy execution successful.
+2026-09-27 10:52:46.937 +05:30 [INF] CORS policy execution successful.
+2026-09-27 10:52:46.945 +05:30 [INF] Executing endpoint 'EcommerceApi.Controllers.ProductController.GetAll (EcommerceApi)'
+2026-09-27 10:52:46.946 +05:30 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2026-09-27 10:52:46.948 +05:30 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(System.String, System.Nullable`1[System.Decimal], System.Nullable`1[System.Decimal], System.String, System.Nullable`1[System.Boolean], Int32, Int32) on controller EcommerceApi.Controllers.ProductController (EcommerceApi).
+2026-09-27 10:52:46.950 +05:30 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2026-09-27 10:52:46.957 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Products] AS [p]
+2026-09-27 10:52:46.959 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 10:52:46.965 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name], [p].[Description], [p].[ImageUrl], [p].[Category], [p].[Price], [p].[Quantity]
+FROM [Products] AS [p]
+ORDER BY [p].[CreatedAt] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2026-09-27 10:52:46.967 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/product/categories - 405 0 null 54.946ms
+2026-09-27 10:52:46.971 +05:30 [INF] Executing OkObjectResult, writing value of type 'EcommerceApi.DTOs.PagedResultDto`1[[EcommerceApi.DTOs.ProductResponseDto, EcommerceApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-27 10:52:46.976 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/product/categories - null null
+2026-09-27 10:52:46.979 +05:30 [INF] Executed action EcommerceApi.Controllers.ProductController.GetAll (EcommerceApi) in 25.5259ms
+2026-09-27 10:52:46.981 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/product?pageNumber=1&pageSize=12 - null null
+2026-09-27 10:52:46.984 +05:30 [INF] CORS policy execution successful.
+2026-09-27 10:52:46.986 +05:30 [INF] Executed endpoint 'EcommerceApi.Controllers.ProductController.GetAll (EcommerceApi)'
+2026-09-27 10:52:46.991 +05:30 [INF] CORS policy execution successful.
+2026-09-27 10:52:46.993 +05:30 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2026-09-27 10:52:46.997 +05:30 [INF] Executing endpoint 'EcommerceApi.Controllers.ProductController.GetAll (EcommerceApi)'
+2026-09-27 10:52:46.997 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 10:52:46.998 +05:30 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2026-09-27 10:52:47.000 +05:30 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(System.String, System.Nullable`1[System.Decimal], System.Nullable`1[System.Decimal], System.String, System.Nullable`1[System.Boolean], Int32, Int32) on controller EcommerceApi.Controllers.ProductController (EcommerceApi).
+2026-09-27 10:52:47.005 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/product?pageNumber=1&pageSize=12 - 200 null application/json; charset=utf-8 104.9192ms
+2026-09-27 10:52:47.009 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 10:52:47.012 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Products] AS [p]
+2026-09-27 10:52:47.021 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/product/categories - 405 0 null 44.478ms
+2026-09-27 10:52:47.028 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name], [p].[Description], [p].[ImageUrl], [p].[Category], [p].[Price], [p].[Quantity]
+FROM [Products] AS [p]
+ORDER BY [p].[CreatedAt] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2026-09-27 10:52:47.036 +05:30 [INF] Executing OkObjectResult, writing value of type 'EcommerceApi.DTOs.PagedResultDto`1[[EcommerceApi.DTOs.ProductResponseDto, EcommerceApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-27 10:52:47.040 +05:30 [INF] Executed action EcommerceApi.Controllers.ProductController.GetAll (EcommerceApi) in 30.2668ms
+2026-09-27 10:52:47.044 +05:30 [INF] Executed endpoint 'EcommerceApi.Controllers.ProductController.GetAll (EcommerceApi)'
+2026-09-27 10:52:47.048 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 10:52:47.053 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/product?pageNumber=1&pageSize=12 - 200 null application/json; charset=utf-8 71.716ms
+2026-09-27 10:52:58.626 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/order/my-orders - null null
+2026-09-27 10:52:58.626 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/order/my-orders - null null
+2026-09-27 10:52:58.650 +05:30 [INF] CORS policy execution successful.
+2026-09-27 10:52:58.654 +05:30 [INF] CORS policy execution successful.
+2026-09-27 10:52:58.696 +05:30 [INF] Executed DbCommand (36ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 10:52:58.696 +05:30 [INF] Executed DbCommand (36ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 10:52:58.701 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/order/my-orders - 204 null null 75.2834ms
+2026-09-27 10:52:58.705 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/order/my-orders - 204 null null 79.4621ms
+2026-09-27 10:52:58.712 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/order/my-orders - null null
+2026-09-27 10:52:58.722 +05:30 [INF] CORS policy execution successful.
+2026-09-27 10:52:58.725 +05:30 [INF] Executing endpoint 'EcommerceApi.Controllers.OrderController.GetMyOrders (EcommerceApi)'
+2026-09-27 10:52:58.733 +05:30 [INF] Route matched with {action = "GetMyOrders", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMyOrders() on controller EcommerceApi.Controllers.OrderController (EcommerceApi).
+2026-09-27 10:52:58.849 +05:30 [INF] Executed DbCommand (13ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[TotalAmount], [o].[Status], [o].[CreatedAt], [o0].[ProductName], [o0].[Price], [o0].[Quantity], [o0].[Id]
+FROM [Orders] AS [o]
+LEFT JOIN [OrderItems] AS [o0] ON [o].[Id] = [o0].[OrderId]
+WHERE [o].[UserId] = @__userId_0
+ORDER BY [o].[CreatedAt] DESC, [o].[Id]
+2026-09-27 10:52:58.857 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[EcommerceApi.DTOs.OrderResponseDto, EcommerceApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-27 10:52:58.871 +05:30 [INF] Executed action EcommerceApi.Controllers.OrderController.GetMyOrders (EcommerceApi) in 134.6497ms
+2026-09-27 10:52:58.873 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/order/my-orders - null null
+2026-09-27 10:52:58.874 +05:30 [INF] Executed endpoint 'EcommerceApi.Controllers.OrderController.GetMyOrders (EcommerceApi)'
+2026-09-27 10:52:58.879 +05:30 [INF] CORS policy execution successful.
+2026-09-27 10:52:58.883 +05:30 [INF] Executing endpoint 'EcommerceApi.Controllers.OrderController.GetMyOrders (EcommerceApi)'
+2026-09-27 10:52:58.883 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 10:52:58.885 +05:30 [INF] Route matched with {action = "GetMyOrders", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMyOrders() on controller EcommerceApi.Controllers.OrderController (EcommerceApi).
+2026-09-27 10:52:58.889 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/order/my-orders - 200 null application/json; charset=utf-8 176.6334ms
+2026-09-27 10:52:58.895 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[TotalAmount], [o].[Status], [o].[CreatedAt], [o0].[ProductName], [o0].[Price], [o0].[Quantity], [o0].[Id]
+FROM [Orders] AS [o]
+LEFT JOIN [OrderItems] AS [o0] ON [o].[Id] = [o0].[OrderId]
+WHERE [o].[UserId] = @__userId_0
+ORDER BY [o].[CreatedAt] DESC, [o].[Id]
+2026-09-27 10:52:58.902 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[EcommerceApi.DTOs.OrderResponseDto, EcommerceApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-27 10:52:58.905 +05:30 [INF] Executed action EcommerceApi.Controllers.OrderController.GetMyOrders (EcommerceApi) in 13.2865ms
+2026-09-27 10:52:58.908 +05:30 [INF] Executed endpoint 'EcommerceApi.Controllers.OrderController.GetMyOrders (EcommerceApi)'
+2026-09-27 10:52:58.912 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 10:52:58.916 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/order/my-orders - 200 null application/json; charset=utf-8 43.5254ms
+2026-09-27 10:53:01.077 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/cart - null null
+2026-09-27 10:53:01.078 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/cart - null null
+2026-09-27 10:53:01.095 +05:30 [INF] CORS policy execution successful.
+2026-09-27 10:53:01.103 +05:30 [INF] CORS policy execution successful.
+2026-09-27 10:53:01.110 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 10:53:01.110 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 10:53:01.114 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/cart - 204 null null 36.1342ms
+2026-09-27 10:53:01.118 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/cart - 204 null null 40.0077ms
+2026-09-27 10:53:01.124 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/cart - null null
+2026-09-27 10:53:01.134 +05:30 [INF] CORS policy execution successful.
+2026-09-27 10:53:01.136 +05:30 [INF] Executing endpoint 'EcommerceApi.Controllers.CartController.GetCart (EcommerceApi)'
+2026-09-27 10:53:01.143 +05:30 [INF] Route matched with {action = "GetCart", controller = "Cart"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCart() on controller EcommerceApi.Controllers.CartController (EcommerceApi).
+2026-09-27 10:53:01.174 +05:30 [INF] Executed DbCommand (8ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id] AS [CartItemId], [c].[ProductId], [p].[Name], [p].[ImageUrl], [p].[Price], [c].[Quantity]
+FROM [CartItems] AS [c]
+INNER JOIN [Products] AS [p] ON [c].[ProductId] = [p].[Id]
+WHERE [c].[UserId] = @__userId_0
+2026-09-27 10:53:01.180 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[EcommerceApi.DTOs.CartItemResponseDto, EcommerceApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-27 10:53:01.185 +05:30 [INF] Executed action EcommerceApi.Controllers.CartController.GetCart (EcommerceApi) in 38.6186ms
+2026-09-27 10:53:01.187 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/cart - null null
+2026-09-27 10:53:01.188 +05:30 [INF] Executed endpoint 'EcommerceApi.Controllers.CartController.GetCart (EcommerceApi)'
+2026-09-27 10:53:01.193 +05:30 [INF] CORS policy execution successful.
+2026-09-27 10:53:01.196 +05:30 [INF] Executing endpoint 'EcommerceApi.Controllers.CartController.GetCart (EcommerceApi)'
+2026-09-27 10:53:01.197 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 10:53:01.198 +05:30 [INF] Route matched with {action = "GetCart", controller = "Cart"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCart() on controller EcommerceApi.Controllers.CartController (EcommerceApi).
+2026-09-27 10:53:01.202 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/cart - 200 null application/json; charset=utf-8 78.7186ms
+2026-09-27 10:53:01.209 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id] AS [CartItemId], [c].[ProductId], [p].[Name], [p].[ImageUrl], [p].[Price], [c].[Quantity]
+FROM [CartItems] AS [c]
+INNER JOIN [Products] AS [p] ON [c].[ProductId] = [p].[Id]
+WHERE [c].[UserId] = @__userId_0
+2026-09-27 10:53:01.221 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[EcommerceApi.DTOs.CartItemResponseDto, EcommerceApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-27 10:53:01.224 +05:30 [INF] Executed action EcommerceApi.Controllers.CartController.GetCart (EcommerceApi) in 16.9136ms
+2026-09-27 10:53:01.226 +05:30 [INF] Executed endpoint 'EcommerceApi.Controllers.CartController.GetCart (EcommerceApi)'
+2026-09-27 10:53:01.230 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 10:53:01.234 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/cart - 200 null application/json; charset=utf-8 46.9388ms
+2026-09-27 10:53:04.062 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/product/categories - null null
+2026-09-27 10:53:04.062 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/product?pageNumber=1&pageSize=12 - null null
+2026-09-27 10:53:04.062 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/product?pageNumber=1&pageSize=12 - null null
+2026-09-27 10:53:04.062 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/product/categories - null null
+2026-09-27 10:53:04.074 +05:30 [INF] CORS policy execution successful.
+2026-09-27 10:53:04.086 +05:30 [INF] CORS policy execution successful.
+2026-09-27 10:53:04.094 +05:30 [INF] CORS policy execution successful.
+2026-09-27 10:53:04.097 +05:30 [INF] CORS policy execution successful.
+2026-09-27 10:53:04.122 +05:30 [INF] Executed DbCommand (22ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 10:53:04.122 +05:30 [INF] Executed DbCommand (21ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 10:53:04.122 +05:30 [INF] Executed DbCommand (18ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 10:53:04.122 +05:30 [INF] Executed DbCommand (19ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 10:53:04.126 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/product/categories - 204 null null 63.9501ms
+2026-09-27 10:53:04.131 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/product?pageNumber=1&pageSize=12 - 204 null null 68.8328ms
+2026-09-27 10:53:04.133 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/product/categories - 204 null null 70.6466ms
+2026-09-27 10:53:04.137 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/product?pageNumber=1&pageSize=12 - 204 null null 74.6043ms
+2026-09-27 10:53:04.143 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/product/categories - null null
+2026-09-27 10:53:04.150 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/product?pageNumber=1&pageSize=12 - null null
+2026-09-27 10:53:04.167 +05:30 [INF] CORS policy execution successful.
+2026-09-27 10:53:04.171 +05:30 [INF] CORS policy execution successful.
+2026-09-27 10:53:04.173 +05:30 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2026-09-27 10:53:04.174 +05:30 [INF] Executing endpoint 'EcommerceApi.Controllers.ProductController.GetAll (EcommerceApi)'
+2026-09-27 10:53:04.175 +05:30 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2026-09-27 10:53:04.177 +05:30 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(System.String, System.Nullable`1[System.Decimal], System.Nullable`1[System.Decimal], System.String, System.Nullable`1[System.Boolean], Int32, Int32) on controller EcommerceApi.Controllers.ProductController (EcommerceApi).
+2026-09-27 10:53:04.181 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 10:53:04.185 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Products] AS [p]
+2026-09-27 10:53:04.186 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/product/categories - 405 0 null 43.1629ms
+2026-09-27 10:53:04.193 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name], [p].[Description], [p].[ImageUrl], [p].[Category], [p].[Price], [p].[Quantity]
+FROM [Products] AS [p]
+ORDER BY [p].[CreatedAt] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2026-09-27 10:53:04.196 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/product/categories - null null
+2026-09-27 10:53:04.199 +05:30 [INF] Executing OkObjectResult, writing value of type 'EcommerceApi.DTOs.PagedResultDto`1[[EcommerceApi.DTOs.ProductResponseDto, EcommerceApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-27 10:53:04.204 +05:30 [INF] CORS policy execution successful.
+2026-09-27 10:53:04.207 +05:30 [INF] Executed action EcommerceApi.Controllers.ProductController.GetAll (EcommerceApi) in 24.7256ms
+2026-09-27 10:53:04.209 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/product?pageNumber=1&pageSize=12 - null null
+2026-09-27 10:53:04.209 +05:30 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2026-09-27 10:53:04.211 +05:30 [INF] Executed endpoint 'EcommerceApi.Controllers.ProductController.GetAll (EcommerceApi)'
+2026-09-27 10:53:04.216 +05:30 [INF] CORS policy execution successful.
+2026-09-27 10:53:04.218 +05:30 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2026-09-27 10:53:04.222 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 10:53:04.222 +05:30 [INF] Executing endpoint 'EcommerceApi.Controllers.ProductController.GetAll (EcommerceApi)'
+2026-09-27 10:53:04.226 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 10:53:04.228 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/product?pageNumber=1&pageSize=12 - 200 null application/json; charset=utf-8 77.6703ms
+2026-09-27 10:53:04.229 +05:30 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(System.String, System.Nullable`1[System.Decimal], System.Nullable`1[System.Decimal], System.String, System.Nullable`1[System.Boolean], Int32, Int32) on controller EcommerceApi.Controllers.ProductController (EcommerceApi).
+2026-09-27 10:53:04.234 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/product/categories - 405 0 null 38.3697ms
+2026-09-27 10:53:04.249 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Products] AS [p]
+2026-09-27 10:53:04.264 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name], [p].[Description], [p].[ImageUrl], [p].[Category], [p].[Price], [p].[Quantity]
+FROM [Products] AS [p]
+ORDER BY [p].[CreatedAt] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2026-09-27 10:53:04.269 +05:30 [INF] Executing OkObjectResult, writing value of type 'EcommerceApi.DTOs.PagedResultDto`1[[EcommerceApi.DTOs.ProductResponseDto, EcommerceApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-27 10:53:04.272 +05:30 [INF] Executed action EcommerceApi.Controllers.ProductController.GetAll (EcommerceApi) in 26.2401ms
+2026-09-27 10:53:04.275 +05:30 [INF] Executed endpoint 'EcommerceApi.Controllers.ProductController.GetAll (EcommerceApi)'
+2026-09-27 10:53:04.282 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 10:53:04.288 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/product?pageNumber=1&pageSize=12 - 200 null application/json; charset=utf-8 79.2753ms
+2026-09-27 10:53:06.260 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/order/my-orders - null null
+2026-09-27 10:53:06.260 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/order/my-orders - null null
+2026-09-27 10:53:06.288 +05:30 [INF] CORS policy execution successful.
+2026-09-27 10:53:06.295 +05:30 [INF] CORS policy execution successful.
+2026-09-27 10:53:06.347 +05:30 [INF] Executed DbCommand (49ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 10:53:06.349 +05:30 [INF] Executed DbCommand (50ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 10:53:06.411 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/order/my-orders - 204 null null 150.9307ms
+2026-09-27 10:53:06.415 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/order/my-orders - 204 null null 155.0185ms
+2026-09-27 10:53:06.420 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/order/my-orders - null null
+2026-09-27 10:53:06.445 +05:30 [INF] CORS policy execution successful.
+2026-09-27 10:53:06.447 +05:30 [INF] Executing endpoint 'EcommerceApi.Controllers.OrderController.GetMyOrders (EcommerceApi)'
+2026-09-27 10:53:06.449 +05:30 [INF] Route matched with {action = "GetMyOrders", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMyOrders() on controller EcommerceApi.Controllers.OrderController (EcommerceApi).
+2026-09-27 10:53:06.455 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[TotalAmount], [o].[Status], [o].[CreatedAt], [o0].[ProductName], [o0].[Price], [o0].[Quantity], [o0].[Id]
+FROM [Orders] AS [o]
+LEFT JOIN [OrderItems] AS [o0] ON [o].[Id] = [o0].[OrderId]
+WHERE [o].[UserId] = @__userId_0
+ORDER BY [o].[CreatedAt] DESC, [o].[Id]
+2026-09-27 10:53:06.460 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[EcommerceApi.DTOs.OrderResponseDto, EcommerceApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-27 10:53:06.463 +05:30 [INF] Executed action EcommerceApi.Controllers.OrderController.GetMyOrders (EcommerceApi) in 10.134ms
+2026-09-27 10:53:06.464 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/order/my-orders - null null
+2026-09-27 10:53:06.465 +05:30 [INF] Executed endpoint 'EcommerceApi.Controllers.OrderController.GetMyOrders (EcommerceApi)'
+2026-09-27 10:53:06.471 +05:30 [INF] CORS policy execution successful.
+2026-09-27 10:53:06.475 +05:30 [INF] Executing endpoint 'EcommerceApi.Controllers.OrderController.GetMyOrders (EcommerceApi)'
+2026-09-27 10:53:06.475 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 10:53:06.477 +05:30 [INF] Route matched with {action = "GetMyOrders", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMyOrders() on controller EcommerceApi.Controllers.OrderController (EcommerceApi).
+2026-09-27 10:53:06.481 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/order/my-orders - 200 null application/json; charset=utf-8 60.7065ms
+2026-09-27 10:53:06.487 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[TotalAmount], [o].[Status], [o].[CreatedAt], [o0].[ProductName], [o0].[Price], [o0].[Quantity], [o0].[Id]
+FROM [Orders] AS [o]
+LEFT JOIN [OrderItems] AS [o0] ON [o].[Id] = [o0].[OrderId]
+WHERE [o].[UserId] = @__userId_0
+ORDER BY [o].[CreatedAt] DESC, [o].[Id]
+2026-09-27 10:53:06.495 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[EcommerceApi.DTOs.OrderResponseDto, EcommerceApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-27 10:53:06.498 +05:30 [INF] Executed action EcommerceApi.Controllers.OrderController.GetMyOrders (EcommerceApi) in 14.05ms
+2026-09-27 10:53:06.501 +05:30 [INF] Executed endpoint 'EcommerceApi.Controllers.OrderController.GetMyOrders (EcommerceApi)'
+2026-09-27 10:53:06.505 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 10:53:06.509 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/order/my-orders - 200 null application/json; charset=utf-8 45.1948ms
+2026-09-27 10:53:15.750 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/cart - null null
+2026-09-27 10:53:15.752 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/cart - null null
+2026-09-27 10:53:15.790 +05:30 [INF] CORS policy execution successful.
+2026-09-27 10:53:15.797 +05:30 [INF] CORS policy execution successful.
+2026-09-27 10:53:15.801 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 10:53:15.801 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 10:53:15.806 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/cart - 204 null null 54.8521ms
+2026-09-27 10:53:15.811 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/cart - 204 null null 61.149ms
+2026-09-27 10:53:15.817 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/cart - null null
+2026-09-27 10:53:15.827 +05:30 [INF] CORS policy execution successful.
+2026-09-27 10:53:15.829 +05:30 [INF] Executing endpoint 'EcommerceApi.Controllers.CartController.GetCart (EcommerceApi)'
+2026-09-27 10:53:15.831 +05:30 [INF] Route matched with {action = "GetCart", controller = "Cart"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCart() on controller EcommerceApi.Controllers.CartController (EcommerceApi).
+2026-09-27 10:53:15.836 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id] AS [CartItemId], [c].[ProductId], [p].[Name], [p].[ImageUrl], [p].[Price], [c].[Quantity]
+FROM [CartItems] AS [c]
+INNER JOIN [Products] AS [p] ON [c].[ProductId] = [p].[Id]
+WHERE [c].[UserId] = @__userId_0
+2026-09-27 10:53:15.840 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[EcommerceApi.DTOs.CartItemResponseDto, EcommerceApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-27 10:53:15.843 +05:30 [INF] Executed action EcommerceApi.Controllers.CartController.GetCart (EcommerceApi) in 8.9169ms
+2026-09-27 10:53:15.845 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/cart - null null
+2026-09-27 10:53:15.846 +05:30 [INF] Executed endpoint 'EcommerceApi.Controllers.CartController.GetCart (EcommerceApi)'
+2026-09-27 10:53:15.850 +05:30 [INF] CORS policy execution successful.
+2026-09-27 10:53:15.855 +05:30 [INF] Executing endpoint 'EcommerceApi.Controllers.CartController.GetCart (EcommerceApi)'
+2026-09-27 10:53:15.855 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 10:53:15.857 +05:30 [INF] Route matched with {action = "GetCart", controller = "Cart"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCart() on controller EcommerceApi.Controllers.CartController (EcommerceApi).
+2026-09-27 10:53:15.860 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/cart - 200 null application/json; charset=utf-8 43.8985ms
+2026-09-27 10:53:15.866 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id] AS [CartItemId], [c].[ProductId], [p].[Name], [p].[ImageUrl], [p].[Price], [c].[Quantity]
+FROM [CartItems] AS [c]
+INNER JOIN [Products] AS [p] ON [c].[ProductId] = [p].[Id]
+WHERE [c].[UserId] = @__userId_0
+2026-09-27 10:53:15.875 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[EcommerceApi.DTOs.CartItemResponseDto, EcommerceApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-27 10:53:15.877 +05:30 [INF] Executed action EcommerceApi.Controllers.CartController.GetCart (EcommerceApi) in 13.911ms
+2026-09-27 10:53:15.880 +05:30 [INF] Executed endpoint 'EcommerceApi.Controllers.CartController.GetCart (EcommerceApi)'
+2026-09-27 10:53:15.883 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 10:53:15.888 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/cart - 200 null application/json; charset=utf-8 43.2821ms
+2026-09-27 10:53:28.120 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/order/create - null null
+2026-09-27 10:53:28.126 +05:30 [INF] CORS policy execution successful.
+2026-09-27 10:53:28.210 +05:30 [INF] Executed DbCommand (81ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 10:53:28.216 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/order/create - 204 null null 95.1102ms
+2026-09-27 10:53:28.223 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/order/create - null 0
+2026-09-27 10:53:28.229 +05:30 [INF] CORS policy execution successful.
+2026-09-27 10:53:28.231 +05:30 [INF] Executing endpoint 'EcommerceApi.Controllers.OrderController.CreateOrder (EcommerceApi)'
+2026-09-27 10:53:28.238 +05:30 [INF] Route matched with {action = "CreateOrder", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateOrder() on controller EcommerceApi.Controllers.OrderController (EcommerceApi).
+2026-09-27 10:53:28.287 +05:30 [INF] Executed DbCommand (9ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[AddedAt], [c].[ProductId], [c].[Quantity], [c].[UserId], [p].[Id], [p].[Category], [p].[CreatedAt], [p].[Description], [p].[ImageUrl], [p].[Name], [p].[Price], [p].[Quantity]
+FROM [CartItems] AS [c]
+INNER JOIN [Products] AS [p] ON [c].[ProductId] = [p].[Id]
+WHERE [c].[UserId] = @__userId_0
+2026-09-27 10:53:29.348 +05:30 [INF] Executing OkObjectResult, writing value of type 'EcommerceApi.DTOs.CreateOrderResponseDto'.
+2026-09-27 10:53:29.353 +05:30 [INF] Executed action EcommerceApi.Controllers.OrderController.CreateOrder (EcommerceApi) in 1107.7734ms
+2026-09-27 10:53:29.356 +05:30 [INF] Executed endpoint 'EcommerceApi.Controllers.OrderController.CreateOrder (EcommerceApi)'
+2026-09-27 10:53:29.386 +05:30 [INF] Executed DbCommand (14ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 10:53:29.390 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/order/create - 200 null application/json; charset=utf-8 1167.8261ms
+2026-09-27 11:05:37.007 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/product/categories - null null
+2026-09-27 11:05:37.010 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/product?pageNumber=1&pageSize=12 - null null
+2026-09-27 11:05:37.011 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/product/categories - null null
+2026-09-27 11:05:37.011 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/product?pageNumber=1&pageSize=12 - null null
+2026-09-27 11:05:37.027 +05:30 [INF] CORS policy execution successful.
+2026-09-27 11:05:37.032 +05:30 [INF] CORS policy execution successful.
+2026-09-27 11:05:37.039 +05:30 [INF] CORS policy execution successful.
+2026-09-27 11:05:37.046 +05:30 [INF] CORS policy execution successful.
+2026-09-27 11:05:37.255 +05:30 [INF] Executed DbCommand (22ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 11:05:37.255 +05:30 [INF] Executed DbCommand (9ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 11:05:37.255 +05:30 [INF] Executed DbCommand (16ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 11:05:37.256 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 11:05:37.261 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/product/categories - 204 null null 253.5748ms
+2026-09-27 11:05:37.265 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/product/categories - 204 null null 253.9606ms
+2026-09-27 11:05:37.268 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/product?pageNumber=1&pageSize=12 - 204 null null 258.1783ms
+2026-09-27 11:05:37.272 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/product?pageNumber=1&pageSize=12 - 204 null null 260.9356ms
+2026-09-27 11:05:37.278 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/product/categories - null null
+2026-09-27 11:05:37.290 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/product?pageNumber=1&pageSize=12 - null null
+2026-09-27 11:05:37.301 +05:30 [INF] CORS policy execution successful.
+2026-09-27 11:05:37.306 +05:30 [INF] CORS policy execution successful.
+2026-09-27 11:05:37.309 +05:30 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2026-09-27 11:05:37.310 +05:30 [INF] Executing endpoint 'EcommerceApi.Controllers.ProductController.GetAll (EcommerceApi)'
+2026-09-27 11:05:37.312 +05:30 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2026-09-27 11:05:37.314 +05:30 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(System.String, System.Nullable`1[System.Decimal], System.Nullable`1[System.Decimal], System.String, System.Nullable`1[System.Boolean], Int32, Int32) on controller EcommerceApi.Controllers.ProductController (EcommerceApi).
+2026-09-27 11:05:37.319 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 11:05:37.324 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/product/categories - 405 0 null 45.5891ms
+2026-09-27 11:05:37.326 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Products] AS [p]
+2026-09-27 11:05:37.330 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/product/categories - null null
+2026-09-27 11:05:37.338 +05:30 [INF] CORS policy execution successful.
+2026-09-27 11:05:37.341 +05:30 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2026-09-27 11:05:37.341 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name], [p].[Description], [p].[ImageUrl], [p].[Category], [p].[Price], [p].[Quantity]
+FROM [Products] AS [p]
+ORDER BY [p].[CreatedAt] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2026-09-27 11:05:37.343 +05:30 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2026-09-27 11:05:37.346 +05:30 [INF] Executing OkObjectResult, writing value of type 'EcommerceApi.DTOs.PagedResultDto`1[[EcommerceApi.DTOs.ProductResponseDto, EcommerceApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-27 11:05:37.351 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 11:05:37.352 +05:30 [INF] Executed action EcommerceApi.Controllers.ProductController.GetAll (EcommerceApi) in 32.7541ms
+2026-09-27 11:05:37.353 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/product?pageNumber=1&pageSize=12 - null null
+2026-09-27 11:05:37.356 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/product/categories - 405 0 null 26.3153ms
+2026-09-27 11:05:37.358 +05:30 [INF] Executed endpoint 'EcommerceApi.Controllers.ProductController.GetAll (EcommerceApi)'
+2026-09-27 11:05:37.363 +05:30 [INF] CORS policy execution successful.
+2026-09-27 11:05:37.373 +05:30 [INF] Executing endpoint 'EcommerceApi.Controllers.ProductController.GetAll (EcommerceApi)'
+2026-09-27 11:05:37.374 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 11:05:37.375 +05:30 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(System.String, System.Nullable`1[System.Decimal], System.Nullable`1[System.Decimal], System.String, System.Nullable`1[System.Boolean], Int32, Int32) on controller EcommerceApi.Controllers.ProductController (EcommerceApi).
+2026-09-27 11:05:37.379 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/product?pageNumber=1&pageSize=12 - 200 null application/json; charset=utf-8 89.4252ms
+2026-09-27 11:05:37.385 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Products] AS [p]
+2026-09-27 11:05:37.395 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name], [p].[Description], [p].[ImageUrl], [p].[Category], [p].[Price], [p].[Quantity]
+FROM [Products] AS [p]
+ORDER BY [p].[CreatedAt] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2026-09-27 11:05:37.401 +05:30 [INF] Executing OkObjectResult, writing value of type 'EcommerceApi.DTOs.PagedResultDto`1[[EcommerceApi.DTOs.ProductResponseDto, EcommerceApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-27 11:05:37.405 +05:30 [INF] Executed action EcommerceApi.Controllers.ProductController.GetAll (EcommerceApi) in 22.5053ms
+2026-09-27 11:05:37.413 +05:30 [INF] Executed endpoint 'EcommerceApi.Controllers.ProductController.GetAll (EcommerceApi)'
+2026-09-27 11:05:37.417 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 11:05:37.423 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/product?pageNumber=1&pageSize=12 - 200 null application/json; charset=utf-8 69.5757ms
+2026-09-27 11:05:48.580 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/cart - null null
+2026-09-27 11:05:48.601 +05:30 [INF] CORS policy execution successful.
+2026-09-27 11:05:48.580 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/cart - null null
+2026-09-27 11:05:48.613 +05:30 [INF] CORS policy execution successful.
+2026-09-27 11:05:48.624 +05:30 [INF] Executed DbCommand (16ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 11:05:48.624 +05:30 [INF] Executed DbCommand (8ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 11:05:48.631 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/cart - 204 null null 50.6246ms
+2026-09-27 11:05:48.636 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/cart - 204 null null 56.049ms
+2026-09-27 11:05:48.642 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/cart - null null
+2026-09-27 11:05:48.653 +05:30 [INF] CORS policy execution successful.
+2026-09-27 11:05:48.655 +05:30 [INF] Executing endpoint 'EcommerceApi.Controllers.CartController.GetCart (EcommerceApi)'
+2026-09-27 11:05:48.658 +05:30 [INF] Route matched with {action = "GetCart", controller = "Cart"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCart() on controller EcommerceApi.Controllers.CartController (EcommerceApi).
+2026-09-27 11:05:48.675 +05:30 [INF] Executed DbCommand (13ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id] AS [CartItemId], [c].[ProductId], [p].[Name], [p].[ImageUrl], [p].[Price], [c].[Quantity]
+FROM [CartItems] AS [c]
+INNER JOIN [Products] AS [p] ON [c].[ProductId] = [p].[Id]
+WHERE [c].[UserId] = @__userId_0
+2026-09-27 11:05:48.680 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[EcommerceApi.DTOs.CartItemResponseDto, EcommerceApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-27 11:05:48.683 +05:30 [INF] Executed action EcommerceApi.Controllers.CartController.GetCart (EcommerceApi) in 21.9766ms
+2026-09-27 11:05:48.685 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/cart - null null
+2026-09-27 11:05:48.686 +05:30 [INF] Executed endpoint 'EcommerceApi.Controllers.CartController.GetCart (EcommerceApi)'
+2026-09-27 11:05:48.690 +05:30 [INF] CORS policy execution successful.
+2026-09-27 11:05:48.694 +05:30 [INF] Executing endpoint 'EcommerceApi.Controllers.CartController.GetCart (EcommerceApi)'
+2026-09-27 11:05:48.694 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 11:05:48.696 +05:30 [INF] Route matched with {action = "GetCart", controller = "Cart"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCart() on controller EcommerceApi.Controllers.CartController (EcommerceApi).
+2026-09-27 11:05:48.701 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/cart - 200 null application/json; charset=utf-8 58.6247ms
+2026-09-27 11:05:48.707 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id] AS [CartItemId], [c].[ProductId], [p].[Name], [p].[ImageUrl], [p].[Price], [c].[Quantity]
+FROM [CartItems] AS [c]
+INNER JOIN [Products] AS [p] ON [c].[ProductId] = [p].[Id]
+WHERE [c].[UserId] = @__userId_0
+2026-09-27 11:05:48.718 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[EcommerceApi.DTOs.CartItemResponseDto, EcommerceApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-27 11:05:48.720 +05:30 [INF] Executed action EcommerceApi.Controllers.CartController.GetCart (EcommerceApi) in 16.4378ms
+2026-09-27 11:05:48.723 +05:30 [INF] Executed endpoint 'EcommerceApi.Controllers.CartController.GetCart (EcommerceApi)'
+2026-09-27 11:05:48.728 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 11:05:48.733 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/cart - 200 null application/json; charset=utf-8 47.6132ms
+2026-09-27 11:05:50.223 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/cart/remove/1044 - null null
+2026-09-27 11:05:50.229 +05:30 [INF] CORS policy execution successful.
+2026-09-27 11:05:50.304 +05:30 [INF] Executed DbCommand (71ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 11:05:50.346 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/cart/remove/1044 - 204 null null 123.5164ms
+2026-09-27 11:05:50.352 +05:30 [INF] Request starting HTTP/1.1 DELETE http://localhost:5000/api/cart/remove/1044 - null null
+2026-09-27 11:05:50.359 +05:30 [INF] CORS policy execution successful.
+2026-09-27 11:05:50.362 +05:30 [INF] Executing endpoint 'EcommerceApi.Controllers.CartController.RemoveFromCart (EcommerceApi)'
+2026-09-27 11:05:50.381 +05:30 [INF] Route matched with {action = "RemoveFromCart", controller = "Cart"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RemoveFromCart(Int32) on controller EcommerceApi.Controllers.CartController (EcommerceApi).
+2026-09-27 11:05:50.401 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__cartItemId_0='?' (DbType = Int32), @__userId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[AddedAt], [c].[ProductId], [c].[Quantity], [c].[UserId]
+FROM [CartItems] AS [c]
+WHERE [c].[Id] = @__cartItemId_0 AND [c].[UserId] = @__userId_1
+2026-09-27 11:05:50.426 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [CartItems]
+OUTPUT 1
+WHERE [Id] = @p0;
+2026-09-27 11:05:50.435 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-09-27 11:05:50.439 +05:30 [INF] Executed action EcommerceApi.Controllers.CartController.RemoveFromCart (EcommerceApi) in 53.9247ms
+2026-09-27 11:05:50.441 +05:30 [INF] Executed endpoint 'EcommerceApi.Controllers.CartController.RemoveFromCart (EcommerceApi)'
+2026-09-27 11:05:50.445 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 11:05:50.450 +05:30 [INF] Request finished HTTP/1.1 DELETE http://localhost:5000/api/cart/remove/1044 - 200 null application/json; charset=utf-8 97.584ms
+2026-09-27 11:05:52.414 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/product/categories - null null
+2026-09-27 11:05:52.416 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/product?pageNumber=1&pageSize=12 - null null
+2026-09-27 11:05:52.416 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/product?pageNumber=1&pageSize=12 - null null
+2026-09-27 11:05:52.416 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/product/categories - null null
+2026-09-27 11:05:52.425 +05:30 [INF] CORS policy execution successful.
+2026-09-27 11:05:52.429 +05:30 [INF] CORS policy execution successful.
+2026-09-27 11:05:52.434 +05:30 [INF] CORS policy execution successful.
+2026-09-27 11:05:52.439 +05:30 [INF] CORS policy execution successful.
+2026-09-27 11:05:52.478 +05:30 [INF] Executed DbCommand (34ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 11:05:52.478 +05:30 [INF] Executed DbCommand (36ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 11:05:52.478 +05:30 [INF] Executed DbCommand (32ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 11:05:52.478 +05:30 [INF] Executed DbCommand (31ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 11:05:52.483 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/product?pageNumber=1&pageSize=12 - 204 null null 67.5773ms
+2026-09-27 11:05:52.487 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/product/categories - 204 null null 72.9333ms
+2026-09-27 11:05:52.490 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/product?pageNumber=1&pageSize=12 - 204 null null 74.1102ms
+2026-09-27 11:05:52.494 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/product/categories - 204 null null 77.8447ms
+2026-09-27 11:05:52.500 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/product?pageNumber=1&pageSize=12 - null null
+2026-09-27 11:05:52.506 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/product/categories - null null
+2026-09-27 11:05:52.523 +05:30 [INF] CORS policy execution successful.
+2026-09-27 11:05:52.528 +05:30 [INF] CORS policy execution successful.
+2026-09-27 11:05:52.530 +05:30 [INF] Executing endpoint 'EcommerceApi.Controllers.ProductController.GetAll (EcommerceApi)'
+2026-09-27 11:05:52.531 +05:30 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2026-09-27 11:05:52.534 +05:30 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(System.String, System.Nullable`1[System.Decimal], System.Nullable`1[System.Decimal], System.String, System.Nullable`1[System.Boolean], Int32, Int32) on controller EcommerceApi.Controllers.ProductController (EcommerceApi).
+2026-09-27 11:05:52.536 +05:30 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2026-09-27 11:05:52.543 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 11:05:52.544 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Products] AS [p]
+2026-09-27 11:05:52.548 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/product/categories - 405 0 null 41.8477ms
+2026-09-27 11:05:52.557 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/product/categories - null null
+2026-09-27 11:05:52.558 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name], [p].[Description], [p].[ImageUrl], [p].[Category], [p].[Price], [p].[Quantity]
+FROM [Products] AS [p]
+ORDER BY [p].[CreatedAt] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2026-09-27 11:05:52.562 +05:30 [INF] CORS policy execution successful.
+2026-09-27 11:05:52.566 +05:30 [INF] Executing OkObjectResult, writing value of type 'EcommerceApi.DTOs.PagedResultDto`1[[EcommerceApi.DTOs.ProductResponseDto, EcommerceApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-27 11:05:52.568 +05:30 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2026-09-27 11:05:52.570 +05:30 [INF] Executed action EcommerceApi.Controllers.ProductController.GetAll (EcommerceApi) in 30.4654ms
+2026-09-27 11:05:52.571 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/product?pageNumber=1&pageSize=12 - null null
+2026-09-27 11:05:52.571 +05:30 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2026-09-27 11:05:52.573 +05:30 [INF] Executed endpoint 'EcommerceApi.Controllers.ProductController.GetAll (EcommerceApi)'
+2026-09-27 11:05:52.579 +05:30 [INF] CORS policy execution successful.
+2026-09-27 11:05:52.583 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 11:05:52.584 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 11:05:52.584 +05:30 [INF] Executing endpoint 'EcommerceApi.Controllers.ProductController.GetAll (EcommerceApi)'
+2026-09-27 11:05:52.588 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/product/categories - 405 0 null 30.4121ms
+2026-09-27 11:05:52.591 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/product?pageNumber=1&pageSize=12 - 200 null application/json; charset=utf-8 91.1456ms
+2026-09-27 11:05:52.593 +05:30 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(System.String, System.Nullable`1[System.Decimal], System.Nullable`1[System.Decimal], System.String, System.Nullable`1[System.Boolean], Int32, Int32) on controller EcommerceApi.Controllers.ProductController (EcommerceApi).
+2026-09-27 11:05:52.610 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Products] AS [p]
+2026-09-27 11:05:52.617 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name], [p].[Description], [p].[ImageUrl], [p].[Category], [p].[Price], [p].[Quantity]
+FROM [Products] AS [p]
+ORDER BY [p].[CreatedAt] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2026-09-27 11:05:52.621 +05:30 [INF] Executing OkObjectResult, writing value of type 'EcommerceApi.DTOs.PagedResultDto`1[[EcommerceApi.DTOs.ProductResponseDto, EcommerceApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-27 11:05:52.624 +05:30 [INF] Executed action EcommerceApi.Controllers.ProductController.GetAll (EcommerceApi) in 16.0858ms
+2026-09-27 11:05:52.626 +05:30 [INF] Executed endpoint 'EcommerceApi.Controllers.ProductController.GetAll (EcommerceApi)'
+2026-09-27 11:05:52.630 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 11:05:52.634 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/product?pageNumber=1&pageSize=12 - 200 null application/json; charset=utf-8 63.0434ms
+2026-09-27 11:05:55.069 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/cart/add - null null
+2026-09-27 11:05:55.074 +05:30 [INF] CORS policy execution successful.
+2026-09-27 11:05:55.142 +05:30 [INF] Executed DbCommand (65ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 11:05:55.147 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/cart/add - 204 null null 78.6341ms
+2026-09-27 11:05:55.153 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/cart/add - application/json 30
+2026-09-27 11:05:55.158 +05:30 [INF] CORS policy execution successful.
+2026-09-27 11:05:55.161 +05:30 [INF] Executing endpoint 'EcommerceApi.Controllers.CartController.AddToCart (EcommerceApi)'
+2026-09-27 11:05:55.168 +05:30 [INF] Route matched with {action = "AddToCart", controller = "Cart"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddToCart(EcommerceApi.DTOs.AddToCartDto) on controller EcommerceApi.Controllers.CartController (EcommerceApi).
+2026-09-27 11:05:55.205 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[Category], [p].[CreatedAt], [p].[Description], [p].[ImageUrl], [p].[Name], [p].[Price], [p].[Quantity]
+FROM [Products] AS [p]
+WHERE [p].[Id] = @__p_0
+2026-09-27 11:05:55.221 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__userId_0='?' (DbType = Int32), @__dto_ProductId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[AddedAt], [c].[ProductId], [c].[Quantity], [c].[UserId]
+FROM [CartItems] AS [c]
+WHERE [c].[UserId] = @__userId_0 AND [c].[ProductId] = @__dto_ProductId_1
+2026-09-27 11:05:55.240 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [CartItems] ([AddedAt], [ProductId], [Quantity], [UserId])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3);
+2026-09-27 11:05:55.247 +05:30 [INF] User 2 added Product 510 to cart, quantity 1
+2026-09-27 11:05:55.250 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-09-27 11:05:55.253 +05:30 [INF] Executed action EcommerceApi.Controllers.CartController.AddToCart (EcommerceApi) in 81.0151ms
+2026-09-27 11:05:55.256 +05:30 [INF] Executed endpoint 'EcommerceApi.Controllers.CartController.AddToCart (EcommerceApi)'
+2026-09-27 11:05:55.259 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 11:05:55.264 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/cart/add - 200 null application/json; charset=utf-8 110.687ms
+2026-09-27 11:06:01.242 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/cart - null null
+2026-09-27 11:06:01.242 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/cart - null null
+2026-09-27 11:06:01.254 +05:30 [INF] CORS policy execution successful.
+2026-09-27 11:06:01.268 +05:30 [INF] CORS policy execution successful.
+2026-09-27 11:06:01.308 +05:30 [INF] Executed DbCommand (36ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 11:06:01.308 +05:30 [INF] Executed DbCommand (38ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 11:06:01.314 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/cart - 204 null null 71.3877ms
+2026-09-27 11:06:01.318 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/cart - 204 null null 75.9951ms
+2026-09-27 11:06:01.323 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/cart - null null
+2026-09-27 11:06:01.335 +05:30 [INF] CORS policy execution successful.
+2026-09-27 11:06:01.337 +05:30 [INF] Executing endpoint 'EcommerceApi.Controllers.CartController.GetCart (EcommerceApi)'
+2026-09-27 11:06:01.340 +05:30 [INF] Route matched with {action = "GetCart", controller = "Cart"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCart() on controller EcommerceApi.Controllers.CartController (EcommerceApi).
+2026-09-27 11:06:01.346 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id] AS [CartItemId], [c].[ProductId], [p].[Name], [p].[ImageUrl], [p].[Price], [c].[Quantity]
+FROM [CartItems] AS [c]
+INNER JOIN [Products] AS [p] ON [c].[ProductId] = [p].[Id]
+WHERE [c].[UserId] = @__userId_0
+2026-09-27 11:06:01.350 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[EcommerceApi.DTOs.CartItemResponseDto, EcommerceApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-27 11:06:01.353 +05:30 [INF] Executed action EcommerceApi.Controllers.CartController.GetCart (EcommerceApi) in 9.2807ms
+2026-09-27 11:06:01.355 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/cart - null null
+2026-09-27 11:06:01.356 +05:30 [INF] Executed endpoint 'EcommerceApi.Controllers.CartController.GetCart (EcommerceApi)'
+2026-09-27 11:06:01.360 +05:30 [INF] CORS policy execution successful.
+2026-09-27 11:06:01.364 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 11:06:01.364 +05:30 [INF] Executing endpoint 'EcommerceApi.Controllers.CartController.GetCart (EcommerceApi)'
+2026-09-27 11:06:01.368 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/cart - 200 null application/json; charset=utf-8 45.3193ms
+2026-09-27 11:06:01.370 +05:30 [INF] Route matched with {action = "GetCart", controller = "Cart"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCart() on controller EcommerceApi.Controllers.CartController (EcommerceApi).
+2026-09-27 11:06:01.383 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id] AS [CartItemId], [c].[ProductId], [p].[Name], [p].[ImageUrl], [p].[Price], [c].[Quantity]
+FROM [CartItems] AS [c]
+INNER JOIN [Products] AS [p] ON [c].[ProductId] = [p].[Id]
+WHERE [c].[UserId] = @__userId_0
+2026-09-27 11:06:01.387 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[EcommerceApi.DTOs.CartItemResponseDto, EcommerceApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-27 11:06:01.390 +05:30 [INF] Executed action EcommerceApi.Controllers.CartController.GetCart (EcommerceApi) in 10.0913ms
+2026-09-27 11:06:01.392 +05:30 [INF] Executed endpoint 'EcommerceApi.Controllers.CartController.GetCart (EcommerceApi)'
+2026-09-27 11:06:01.397 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 11:06:01.401 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/cart - 200 null application/json; charset=utf-8 46.7893ms
+2026-09-27 11:06:07.550 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/order/create - null null
+2026-09-27 11:06:07.560 +05:30 [INF] CORS policy execution successful.
+2026-09-27 11:06:07.564 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 11:06:07.571 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/order/create - 204 null null 20.6418ms
+2026-09-27 11:06:07.581 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/order/create - null 0
+2026-09-27 11:06:07.587 +05:30 [INF] CORS policy execution successful.
+2026-09-27 11:06:07.589 +05:30 [INF] Executing endpoint 'EcommerceApi.Controllers.OrderController.CreateOrder (EcommerceApi)'
+2026-09-27 11:06:07.591 +05:30 [INF] Route matched with {action = "CreateOrder", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateOrder() on controller EcommerceApi.Controllers.OrderController (EcommerceApi).
+2026-09-27 11:06:07.603 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[AddedAt], [c].[ProductId], [c].[Quantity], [c].[UserId], [p].[Id], [p].[Category], [p].[CreatedAt], [p].[Description], [p].[ImageUrl], [p].[Name], [p].[Price], [p].[Quantity]
+FROM [CartItems] AS [c]
+INNER JOIN [Products] AS [p] ON [c].[ProductId] = [p].[Id]
+WHERE [c].[UserId] = @__userId_0
+2026-09-27 11:06:08.042 +05:30 [INF] Executing OkObjectResult, writing value of type 'EcommerceApi.DTOs.CreateOrderResponseDto'.
+2026-09-27 11:06:08.045 +05:30 [INF] Executed action EcommerceApi.Controllers.OrderController.CreateOrder (EcommerceApi) in 449.6772ms
+2026-09-27 11:06:08.050 +05:30 [INF] Executed endpoint 'EcommerceApi.Controllers.OrderController.CreateOrder (EcommerceApi)'
+2026-09-27 11:06:08.055 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 11:06:08.059 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/order/create - 200 null application/json; charset=utf-8 477.8056ms
+2026-09-27 11:06:34.351 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/order/verify - null null
+2026-09-27 11:06:34.357 +05:30 [INF] CORS policy execution successful.
+2026-09-27 11:06:34.361 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 11:06:34.366 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/order/verify - 204 null null 15.2477ms
+2026-09-27 11:06:34.374 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/order/verify - application/json 170
+2026-09-27 11:06:34.380 +05:30 [INF] CORS policy execution successful.
+2026-09-27 11:06:34.383 +05:30 [INF] Executing endpoint 'EcommerceApi.Controllers.OrderController.VerifyPayment (EcommerceApi)'
+2026-09-27 11:06:34.391 +05:30 [INF] Route matched with {action = "VerifyPayment", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] VerifyPayment(EcommerceApi.DTOs.VerifyPaymentDto) on controller EcommerceApi.Controllers.OrderController (EcommerceApi).
+2026-09-27 11:06:34.438 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[AddedAt], [c].[ProductId], [c].[Quantity], [c].[UserId], [p].[Id], [p].[Category], [p].[CreatedAt], [p].[Description], [p].[ImageUrl], [p].[Name], [p].[Price], [p].[Quantity]
+FROM [CartItems] AS [c]
+INNER JOIN [Products] AS [p] ON [c].[ProductId] = [p].[Id]
+WHERE [c].[UserId] = @__userId_0
+2026-09-27 11:06:34.615 +05:30 [WRN] Savepoints are disabled because Multiple Active Result Sets (MARS) is enabled. If 'SaveChanges' fails, then the transaction cannot be automatically rolled back to a known clean state. Instead, the transaction should be rolled back by the application before retrying 'SaveChanges'. See https://go.microsoft.com/fwlink/?linkid=2149338 for more information and examples. To identify the code which triggers this warning, call 'ConfigureWarnings(w => w.Throw(SqlServerEventId.SavepointsDisabledBecauseOfMARS))'.
+2026-09-27 11:06:34.635 +05:30 [INF] Executed DbCommand (17ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = DateTime2), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p6='?' (DbType = Int32), @p8='?' (DbType = Int32), @p7='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [CartItems]
+OUTPUT 1
+WHERE [Id] = @p0;
+INSERT INTO [Orders] ([CreatedAt], [RazorpayOrderId], [RazorpayPaymentId], [Status], [TotalAmount], [UserId])
+OUTPUT INSERTED.[Id]
+VALUES (@p1, @p2, @p3, @p4, @p5, @p6);
+UPDATE [Products] SET [Quantity] = @p7
+OUTPUT 1
+WHERE [Id] = @p8;
+2026-09-27 11:06:34.652 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[@p9='?' (DbType = Int32), @p10='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p11='?' (DbType = Int32), @p12='?' (Size = 4000), @p13='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [OrderItems] ([OrderId], [Price], [ProductId], [ProductName], [Quantity])
+OUTPUT INSERTED.[Id]
+VALUES (@p9, @p10, @p11, @p12, @p13);
+2026-09-27 11:06:34.672 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-09-27 11:06:34.679 +05:30 [INF] Executed action EcommerceApi.Controllers.OrderController.VerifyPayment (EcommerceApi) in 281.4135ms
+2026-09-27 11:06:34.681 +05:30 [INF] Executed endpoint 'EcommerceApi.Controllers.OrderController.VerifyPayment (EcommerceApi)'
+2026-09-27 11:06:34.686 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 11:06:34.690 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/order/verify - 200 null application/json; charset=utf-8 315.7786ms
+2026-09-27 11:06:34.697 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/order/my-orders - null null
+2026-09-27 11:06:34.698 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/order/my-orders - null null
+2026-09-27 11:06:34.703 +05:30 [INF] CORS policy execution successful.
+2026-09-27 11:06:34.707 +05:30 [INF] CORS policy execution successful.
+2026-09-27 11:06:34.712 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 11:06:34.713 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 11:06:34.716 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/order/my-orders - 204 null null 19.3733ms
+2026-09-27 11:06:34.721 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/order/my-orders - 204 null null 23.5427ms
+2026-09-27 11:06:34.727 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/order/my-orders - null null
+2026-09-27 11:06:34.739 +05:30 [INF] CORS policy execution successful.
+2026-09-27 11:06:34.741 +05:30 [INF] Executing endpoint 'EcommerceApi.Controllers.OrderController.GetMyOrders (EcommerceApi)'
+2026-09-27 11:06:34.744 +05:30 [INF] Route matched with {action = "GetMyOrders", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMyOrders() on controller EcommerceApi.Controllers.OrderController (EcommerceApi).
+2026-09-27 11:06:34.756 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[TotalAmount], [o].[Status], [o].[CreatedAt], [o0].[ProductName], [o0].[Price], [o0].[Quantity], [o0].[Id]
+FROM [Orders] AS [o]
+LEFT JOIN [OrderItems] AS [o0] ON [o].[Id] = [o0].[OrderId]
+WHERE [o].[UserId] = @__userId_0
+ORDER BY [o].[CreatedAt] DESC, [o].[Id]
+2026-09-27 11:06:34.761 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[EcommerceApi.DTOs.OrderResponseDto, EcommerceApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-27 11:06:34.764 +05:30 [INF] Executed action EcommerceApi.Controllers.OrderController.GetMyOrders (EcommerceApi) in 16.8216ms
+2026-09-27 11:06:34.766 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/order/my-orders - null null
+2026-09-27 11:06:34.767 +05:30 [INF] Executed endpoint 'EcommerceApi.Controllers.OrderController.GetMyOrders (EcommerceApi)'
+2026-09-27 11:06:34.773 +05:30 [INF] CORS policy execution successful.
+2026-09-27 11:06:34.777 +05:30 [INF] Executing endpoint 'EcommerceApi.Controllers.OrderController.GetMyOrders (EcommerceApi)'
+2026-09-27 11:06:34.777 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 11:06:34.779 +05:30 [INF] Route matched with {action = "GetMyOrders", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMyOrders() on controller EcommerceApi.Controllers.OrderController (EcommerceApi).
+2026-09-27 11:06:34.784 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/order/my-orders - 200 null application/json; charset=utf-8 56.5447ms
+2026-09-27 11:06:34.789 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[TotalAmount], [o].[Status], [o].[CreatedAt], [o0].[ProductName], [o0].[Price], [o0].[Quantity], [o0].[Id]
+FROM [Orders] AS [o]
+LEFT JOIN [OrderItems] AS [o0] ON [o].[Id] = [o0].[OrderId]
+WHERE [o].[UserId] = @__userId_0
+ORDER BY [o].[CreatedAt] DESC, [o].[Id]
+2026-09-27 11:06:34.797 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[EcommerceApi.DTOs.OrderResponseDto, EcommerceApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-27 11:06:34.800 +05:30 [INF] Executed action EcommerceApi.Controllers.OrderController.GetMyOrders (EcommerceApi) in 13.2592ms
+2026-09-27 11:06:34.803 +05:30 [INF] Executed endpoint 'EcommerceApi.Controllers.OrderController.GetMyOrders (EcommerceApi)'
+2026-09-27 11:06:34.807 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 11:06:34.811 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/order/my-orders - 200 null application/json; charset=utf-8 45.2211ms
+2026-09-27 11:06:39.240 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/product/categories - null null
+2026-09-27 11:06:39.241 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/product?pageNumber=1&pageSize=12 - null null
+2026-09-27 11:06:39.241 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/product/categories - null null
+2026-09-27 11:06:39.242 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/product?pageNumber=1&pageSize=12 - null null
+2026-09-27 11:06:39.270 +05:30 [INF] CORS policy execution successful.
+2026-09-27 11:06:39.282 +05:30 [INF] CORS policy execution successful.
+2026-09-27 11:06:39.288 +05:30 [INF] CORS policy execution successful.
+2026-09-27 11:06:39.292 +05:30 [INF] CORS policy execution successful.
+2026-09-27 11:06:39.322 +05:30 [INF] Executed DbCommand (24ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 11:06:39.322 +05:30 [INF] Executed DbCommand (26ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 11:06:39.322 +05:30 [INF] Executed DbCommand (25ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 11:06:39.322 +05:30 [INF] Executed DbCommand (23ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 11:06:39.326 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/product/categories - 204 null null 85.0674ms
+2026-09-27 11:06:39.330 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/product/categories - 204 null null 89.6799ms
+2026-09-27 11:06:39.334 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/product?pageNumber=1&pageSize=12 - 204 null null 93.1199ms
+2026-09-27 11:06:39.337 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/product?pageNumber=1&pageSize=12 - 204 null null 95.5837ms
+2026-09-27 11:06:39.344 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/product/categories - null null
+2026-09-27 11:06:39.355 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/product?pageNumber=1&pageSize=12 - null null
+2026-09-27 11:06:39.365 +05:30 [INF] CORS policy execution successful.
+2026-09-27 11:06:39.369 +05:30 [INF] CORS policy execution successful.
+2026-09-27 11:06:39.370 +05:30 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2026-09-27 11:06:39.372 +05:30 [INF] Executing endpoint 'EcommerceApi.Controllers.ProductController.GetAll (EcommerceApi)'
+2026-09-27 11:06:39.374 +05:30 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2026-09-27 11:06:39.376 +05:30 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(System.String, System.Nullable`1[System.Decimal], System.Nullable`1[System.Decimal], System.String, System.Nullable`1[System.Boolean], Int32, Int32) on controller EcommerceApi.Controllers.ProductController (EcommerceApi).
+2026-09-27 11:06:39.381 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 11:06:39.383 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Products] AS [p]
+2026-09-27 11:06:39.385 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/product/categories - 405 0 null 41.8278ms
+2026-09-27 11:06:39.392 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name], [p].[Description], [p].[ImageUrl], [p].[Category], [p].[Price], [p].[Quantity]
+FROM [Products] AS [p]
+ORDER BY [p].[CreatedAt] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2026-09-27 11:06:39.395 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/product/categories - null null
+2026-09-27 11:06:39.398 +05:30 [INF] Executing OkObjectResult, writing value of type 'EcommerceApi.DTOs.PagedResultDto`1[[EcommerceApi.DTOs.ProductResponseDto, EcommerceApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-27 11:06:39.403 +05:30 [INF] CORS policy execution successful.
+2026-09-27 11:06:39.406 +05:30 [INF] Executed action EcommerceApi.Controllers.ProductController.GetAll (EcommerceApi) in 24.1338ms
+2026-09-27 11:06:39.407 +05:30 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2026-09-27 11:06:39.407 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/product?pageNumber=1&pageSize=12 - null null
+2026-09-27 11:06:39.409 +05:30 [INF] Executed endpoint 'EcommerceApi.Controllers.ProductController.GetAll (EcommerceApi)'
+2026-09-27 11:06:39.411 +05:30 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2026-09-27 11:06:39.416 +05:30 [INF] CORS policy execution successful.
+2026-09-27 11:06:39.421 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 11:06:39.422 +05:30 [INF] Executing endpoint 'EcommerceApi.Controllers.ProductController.GetAll (EcommerceApi)'
+2026-09-27 11:06:39.423 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 11:06:39.426 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/product?pageNumber=1&pageSize=12 - 200 null application/json; charset=utf-8 70.8024ms
+2026-09-27 11:06:39.428 +05:30 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(System.String, System.Nullable`1[System.Decimal], System.Nullable`1[System.Decimal], System.String, System.Nullable`1[System.Boolean], Int32, Int32) on controller EcommerceApi.Controllers.ProductController (EcommerceApi).
+2026-09-27 11:06:39.431 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/product/categories - 405 0 null 36.4259ms
+2026-09-27 11:06:39.442 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Products] AS [p]
+2026-09-27 11:06:39.458 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name], [p].[Description], [p].[ImageUrl], [p].[Category], [p].[Price], [p].[Quantity]
+FROM [Products] AS [p]
+ORDER BY [p].[CreatedAt] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2026-09-27 11:06:39.463 +05:30 [INF] Executing OkObjectResult, writing value of type 'EcommerceApi.DTOs.PagedResultDto`1[[EcommerceApi.DTOs.ProductResponseDto, EcommerceApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-27 11:06:39.466 +05:30 [INF] Executed action EcommerceApi.Controllers.ProductController.GetAll (EcommerceApi) in 27.087ms
+2026-09-27 11:06:39.469 +05:30 [INF] Executed endpoint 'EcommerceApi.Controllers.ProductController.GetAll (EcommerceApi)'
+2026-09-27 11:06:39.474 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 11:06:39.478 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/product?pageNumber=1&pageSize=12 - 200 null application/json; charset=utf-8 70.3988ms
+2026-09-27 11:09:23.475 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/order/my-orders - null null
+2026-09-27 11:09:23.475 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/order/my-orders - null null
+2026-09-27 11:09:23.492 +05:30 [INF] CORS policy execution successful.
+2026-09-27 11:09:23.501 +05:30 [INF] CORS policy execution successful.
+2026-09-27 11:09:23.519 +05:30 [INF] Executed DbCommand (16ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 11:09:23.519 +05:30 [INF] Executed DbCommand (12ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 11:09:23.524 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/order/my-orders - 204 null null 48.5298ms
+2026-09-27 11:09:23.528 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/order/my-orders - 204 null null 52.3836ms
+2026-09-27 11:09:23.533 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/order/my-orders - null null
+2026-09-27 11:09:23.542 +05:30 [INF] CORS policy execution successful.
+2026-09-27 11:09:23.544 +05:30 [INF] Executing endpoint 'EcommerceApi.Controllers.OrderController.GetMyOrders (EcommerceApi)'
+2026-09-27 11:09:23.546 +05:30 [INF] Route matched with {action = "GetMyOrders", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMyOrders() on controller EcommerceApi.Controllers.OrderController (EcommerceApi).
+2026-09-27 11:09:23.560 +05:30 [INF] Executed DbCommand (8ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[TotalAmount], [o].[Status], [o].[CreatedAt], [o0].[ProductName], [o0].[Price], [o0].[Quantity], [o0].[Id]
+FROM [Orders] AS [o]
+LEFT JOIN [OrderItems] AS [o0] ON [o].[Id] = [o0].[OrderId]
+WHERE [o].[UserId] = @__userId_0
+ORDER BY [o].[CreatedAt] DESC, [o].[Id]
+2026-09-27 11:09:23.565 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[EcommerceApi.DTOs.OrderResponseDto, EcommerceApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-27 11:09:23.568 +05:30 [INF] Executed action EcommerceApi.Controllers.OrderController.GetMyOrders (EcommerceApi) in 17.6371ms
+2026-09-27 11:09:23.570 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/order/my-orders - null null
+2026-09-27 11:09:23.571 +05:30 [INF] Executed endpoint 'EcommerceApi.Controllers.OrderController.GetMyOrders (EcommerceApi)'
+2026-09-27 11:09:23.575 +05:30 [INF] CORS policy execution successful.
+2026-09-27 11:09:23.579 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 11:09:23.579 +05:30 [INF] Executing endpoint 'EcommerceApi.Controllers.OrderController.GetMyOrders (EcommerceApi)'
+2026-09-27 11:09:23.583 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/order/my-orders - 200 null application/json; charset=utf-8 50.0211ms
+2026-09-27 11:09:23.585 +05:30 [INF] Route matched with {action = "GetMyOrders", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMyOrders() on controller EcommerceApi.Controllers.OrderController (EcommerceApi).
+2026-09-27 11:09:23.600 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[Id], [o].[TotalAmount], [o].[Status], [o].[CreatedAt], [o0].[ProductName], [o0].[Price], [o0].[Quantity], [o0].[Id]
+FROM [Orders] AS [o]
+LEFT JOIN [OrderItems] AS [o0] ON [o].[Id] = [o0].[OrderId]
+WHERE [o].[UserId] = @__userId_0
+ORDER BY [o].[CreatedAt] DESC, [o].[Id]
+2026-09-27 11:09:23.604 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[EcommerceApi.DTOs.OrderResponseDto, EcommerceApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-27 11:09:23.606 +05:30 [INF] Executed action EcommerceApi.Controllers.OrderController.GetMyOrders (EcommerceApi) in 9.526ms
+2026-09-27 11:09:23.609 +05:30 [INF] Executed endpoint 'EcommerceApi.Controllers.OrderController.GetMyOrders (EcommerceApi)'
+2026-09-27 11:09:23.613 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 11:09:23.617 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/order/my-orders - 200 null application/json; charset=utf-8 47.3229ms
+2026-09-27 11:10:10.561 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/product/categories - null null
+2026-09-27 11:10:10.561 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/product?pageNumber=1&pageSize=12 - null null
+2026-09-27 11:10:10.568 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/product/categories - null null
+2026-09-27 11:10:10.593 +05:30 [INF] CORS policy execution successful.
+2026-09-27 11:10:10.588 +05:30 [INF] CORS policy execution successful.
+2026-09-27 11:10:10.590 +05:30 [INF] CORS policy execution successful.
+2026-09-27 11:10:10.577 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/product?pageNumber=1&pageSize=12 - null null
+2026-09-27 11:10:10.609 +05:30 [INF] CORS policy execution successful.
+2026-09-27 11:10:10.636 +05:30 [INF] Executed DbCommand (33ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 11:10:10.636 +05:30 [INF] Executed DbCommand (24ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 11:10:10.636 +05:30 [INF] Executed DbCommand (30ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 11:10:10.636 +05:30 [INF] Executed DbCommand (36ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 11:10:10.640 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/product/categories - 204 null null 79.0434ms
+2026-09-27 11:10:10.643 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/product?pageNumber=1&pageSize=12 - 204 null null 66.1ms
+2026-09-27 11:10:10.648 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/product?pageNumber=1&pageSize=12 - 204 null null 86.9269ms
+2026-09-27 11:10:10.652 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/product/categories - 204 null null 84.1071ms
+2026-09-27 11:10:10.658 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/product/categories - null null
+2026-09-27 11:10:10.665 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/product?pageNumber=1&pageSize=12 - null null
+2026-09-27 11:10:10.681 +05:30 [INF] CORS policy execution successful.
+2026-09-27 11:10:10.686 +05:30 [INF] CORS policy execution successful.
+2026-09-27 11:10:10.687 +05:30 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2026-09-27 11:10:10.689 +05:30 [INF] Executing endpoint 'EcommerceApi.Controllers.ProductController.GetAll (EcommerceApi)'
+2026-09-27 11:10:10.690 +05:30 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2026-09-27 11:10:10.692 +05:30 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(System.String, System.Nullable`1[System.Decimal], System.Nullable`1[System.Decimal], System.String, System.Nullable`1[System.Boolean], Int32, Int32) on controller EcommerceApi.Controllers.ProductController (EcommerceApi).
+2026-09-27 11:10:10.696 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 11:10:10.702 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/product/categories - 405 0 null 44.1621ms
+2026-09-27 11:10:10.705 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Products] AS [p]
+2026-09-27 11:10:10.708 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/product/categories - null null
+2026-09-27 11:10:10.716 +05:30 [INF] CORS policy execution successful.
+2026-09-27 11:10:10.717 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name], [p].[Description], [p].[ImageUrl], [p].[Category], [p].[Price], [p].[Quantity]
+FROM [Products] AS [p]
+ORDER BY [p].[CreatedAt] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2026-09-27 11:10:10.718 +05:30 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2026-09-27 11:10:10.722 +05:30 [INF] Executing OkObjectResult, writing value of type 'EcommerceApi.DTOs.PagedResultDto`1[[EcommerceApi.DTOs.ProductResponseDto, EcommerceApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-27 11:10:10.723 +05:30 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2026-09-27 11:10:10.726 +05:30 [INF] Executed action EcommerceApi.Controllers.ProductController.GetAll (EcommerceApi) in 28.2797ms
+2026-09-27 11:10:10.727 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/product?pageNumber=1&pageSize=12 - null null
+2026-09-27 11:10:10.730 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 11:10:10.730 +05:30 [INF] Executed endpoint 'EcommerceApi.Controllers.ProductController.GetAll (EcommerceApi)'
+2026-09-27 11:10:10.735 +05:30 [INF] CORS policy execution successful.
+2026-09-27 11:10:10.738 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/product/categories - 405 0 null 29.8727ms
+2026-09-27 11:10:10.742 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 11:10:10.742 +05:30 [INF] Executing endpoint 'EcommerceApi.Controllers.ProductController.GetAll (EcommerceApi)'
+2026-09-27 11:10:10.751 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/product?pageNumber=1&pageSize=12 - 200 null application/json; charset=utf-8 86.0396ms
+2026-09-27 11:10:10.753 +05:30 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(System.String, System.Nullable`1[System.Decimal], System.Nullable`1[System.Decimal], System.String, System.Nullable`1[System.Boolean], Int32, Int32) on controller EcommerceApi.Controllers.ProductController (EcommerceApi).
+2026-09-27 11:10:10.764 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Products] AS [p]
+2026-09-27 11:10:10.770 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name], [p].[Description], [p].[ImageUrl], [p].[Category], [p].[Price], [p].[Quantity]
+FROM [Products] AS [p]
+ORDER BY [p].[CreatedAt] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2026-09-27 11:10:10.774 +05:30 [INF] Executing OkObjectResult, writing value of type 'EcommerceApi.DTOs.PagedResultDto`1[[EcommerceApi.DTOs.ProductResponseDto, EcommerceApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-27 11:10:10.776 +05:30 [INF] Executed action EcommerceApi.Controllers.ProductController.GetAll (EcommerceApi) in 14.3635ms
+2026-09-27 11:10:10.779 +05:30 [INF] Executed endpoint 'EcommerceApi.Controllers.ProductController.GetAll (EcommerceApi)'
+2026-09-27 11:10:10.782 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 11:10:10.787 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/product?pageNumber=1&pageSize=12 - 200 null application/json; charset=utf-8 59.7966ms
+2026-09-27 11:16:16.458 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/cart - null null
+2026-09-27 11:16:16.459 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/cart - null null
+2026-09-27 11:16:16.483 +05:30 [INF] CORS policy execution successful.
+2026-09-27 11:16:16.489 +05:30 [INF] CORS policy execution successful.
+2026-09-27 11:16:16.512 +05:30 [INF] Executed DbCommand (20ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 11:16:16.512 +05:30 [INF] Executed DbCommand (20ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 11:16:16.516 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/cart - 204 null null 57.3515ms
+2026-09-27 11:16:16.518 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/cart - 204 null null 60.3635ms
+2026-09-27 11:16:16.525 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/cart - null null
+2026-09-27 11:16:16.535 +05:30 [INF] CORS policy execution successful.
+2026-09-27 11:16:16.537 +05:30 [INF] Executing endpoint 'EcommerceApi.Controllers.CartController.GetCart (EcommerceApi)'
+2026-09-27 11:16:16.539 +05:30 [INF] Route matched with {action = "GetCart", controller = "Cart"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCart() on controller EcommerceApi.Controllers.CartController (EcommerceApi).
+2026-09-27 11:16:16.552 +05:30 [INF] Executed DbCommand (9ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id] AS [CartItemId], [c].[ProductId], [p].[Name], [p].[ImageUrl], [p].[Price], [c].[Quantity]
+FROM [CartItems] AS [c]
+INNER JOIN [Products] AS [p] ON [c].[ProductId] = [p].[Id]
+WHERE [c].[UserId] = @__userId_0
+2026-09-27 11:16:16.556 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[EcommerceApi.DTOs.CartItemResponseDto, EcommerceApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-27 11:16:16.559 +05:30 [INF] Executed action EcommerceApi.Controllers.CartController.GetCart (EcommerceApi) in 17.0065ms
+2026-09-27 11:16:16.560 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/cart - null null
+2026-09-27 11:16:16.562 +05:30 [INF] Executed endpoint 'EcommerceApi.Controllers.CartController.GetCart (EcommerceApi)'
+2026-09-27 11:16:16.566 +05:30 [INF] CORS policy execution successful.
+2026-09-27 11:16:16.569 +05:30 [INF] Executing endpoint 'EcommerceApi.Controllers.CartController.GetCart (EcommerceApi)'
+2026-09-27 11:16:16.569 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 11:16:16.571 +05:30 [INF] Route matched with {action = "GetCart", controller = "Cart"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCart() on controller EcommerceApi.Controllers.CartController (EcommerceApi).
+2026-09-27 11:16:16.575 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/cart - 200 null application/json; charset=utf-8 49.2265ms
+2026-09-27 11:16:16.581 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id] AS [CartItemId], [c].[ProductId], [p].[Name], [p].[ImageUrl], [p].[Price], [c].[Quantity]
+FROM [CartItems] AS [c]
+INNER JOIN [Products] AS [p] ON [c].[ProductId] = [p].[Id]
+WHERE [c].[UserId] = @__userId_0
+2026-09-27 11:16:16.588 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[EcommerceApi.DTOs.CartItemResponseDto, EcommerceApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-27 11:16:16.591 +05:30 [INF] Executed action EcommerceApi.Controllers.CartController.GetCart (EcommerceApi) in 12.7054ms
+2026-09-27 11:16:16.593 +05:30 [INF] Executed endpoint 'EcommerceApi.Controllers.CartController.GetCart (EcommerceApi)'
+2026-09-27 11:16:16.597 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 11:16:16.601 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/cart - 200 null application/json; charset=utf-8 40.3002ms
+2026-09-27 11:16:18.074 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/product/categories - null null
+2026-09-27 11:16:18.074 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/product?pageNumber=1&pageSize=12 - null null
+2026-09-27 11:16:18.075 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/product/categories - null null
+2026-09-27 11:16:18.078 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/product?pageNumber=1&pageSize=12 - null null
+2026-09-27 11:16:18.087 +05:30 [INF] CORS policy execution successful.
+2026-09-27 11:16:18.091 +05:30 [INF] CORS policy execution successful.
+2026-09-27 11:16:18.096 +05:30 [INF] CORS policy execution successful.
+2026-09-27 11:16:18.103 +05:30 [INF] CORS policy execution successful.
+2026-09-27 11:16:18.134 +05:30 [INF] Executed DbCommand (29ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 11:16:18.135 +05:30 [INF] Executed DbCommand (29ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 11:16:18.135 +05:30 [INF] Executed DbCommand (27ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 11:16:18.135 +05:30 [INF] Executed DbCommand (26ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 11:16:18.138 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/product/categories - 204 null null 64.1261ms
+2026-09-27 11:16:18.142 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/product?pageNumber=1&pageSize=12 - 204 null null 67.701ms
+2026-09-27 11:16:18.145 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/product/categories - 204 null null 70.3241ms
+2026-09-27 11:16:18.149 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/product?pageNumber=1&pageSize=12 - 204 null null 71.1309ms
+2026-09-27 11:16:18.154 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/product/categories - null null
+2026-09-27 11:16:18.159 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/product?pageNumber=1&pageSize=12 - null null
+2026-09-27 11:16:18.174 +05:30 [INF] CORS policy execution successful.
+2026-09-27 11:16:18.179 +05:30 [INF] CORS policy execution successful.
+2026-09-27 11:16:18.180 +05:30 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2026-09-27 11:16:18.181 +05:30 [INF] Executing endpoint 'EcommerceApi.Controllers.ProductController.GetAll (EcommerceApi)'
+2026-09-27 11:16:18.183 +05:30 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2026-09-27 11:16:18.185 +05:30 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(System.String, System.Nullable`1[System.Decimal], System.Nullable`1[System.Decimal], System.String, System.Nullable`1[System.Boolean], Int32, Int32) on controller EcommerceApi.Controllers.ProductController (EcommerceApi).
+2026-09-27 11:16:18.190 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 11:16:18.195 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/product/categories - 405 0 null 40.8782ms
+2026-09-27 11:16:18.195 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Products] AS [p]
+2026-09-27 11:16:18.201 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/product/categories - null null
+2026-09-27 11:16:18.210 +05:30 [INF] CORS policy execution successful.
+2026-09-27 11:16:18.210 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name], [p].[Description], [p].[ImageUrl], [p].[Category], [p].[Price], [p].[Quantity]
+FROM [Products] AS [p]
+ORDER BY [p].[CreatedAt] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2026-09-27 11:16:18.211 +05:30 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2026-09-27 11:16:18.215 +05:30 [INF] Executing OkObjectResult, writing value of type 'EcommerceApi.DTOs.PagedResultDto`1[[EcommerceApi.DTOs.ProductResponseDto, EcommerceApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-27 11:16:18.217 +05:30 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2026-09-27 11:16:18.219 +05:30 [INF] Executed action EcommerceApi.Controllers.ProductController.GetAll (EcommerceApi) in 28.2915ms
+2026-09-27 11:16:18.226 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/product?pageNumber=1&pageSize=12 - null null
+2026-09-27 11:16:18.244 +05:30 [INF] Executed DbCommand (13ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 11:16:18.255 +05:30 [INF] Executed endpoint 'EcommerceApi.Controllers.ProductController.GetAll (EcommerceApi)'
+2026-09-27 11:16:18.268 +05:30 [INF] CORS policy execution successful.
+2026-09-27 11:16:18.276 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/product/categories - 405 0 null 75.0097ms
+2026-09-27 11:16:18.285 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 11:16:18.289 +05:30 [INF] Executing endpoint 'EcommerceApi.Controllers.ProductController.GetAll (EcommerceApi)'
+2026-09-27 11:16:18.303 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/product?pageNumber=1&pageSize=12 - 200 null application/json; charset=utf-8 144.4716ms
+2026-09-27 11:16:18.305 +05:30 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(System.String, System.Nullable`1[System.Decimal], System.Nullable`1[System.Decimal], System.String, System.Nullable`1[System.Boolean], Int32, Int32) on controller EcommerceApi.Controllers.ProductController (EcommerceApi).
+2026-09-27 11:16:18.326 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Products] AS [p]
+2026-09-27 11:16:18.334 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name], [p].[Description], [p].[ImageUrl], [p].[Category], [p].[Price], [p].[Quantity]
+FROM [Products] AS [p]
+ORDER BY [p].[CreatedAt] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2026-09-27 11:16:18.338 +05:30 [INF] Executing OkObjectResult, writing value of type 'EcommerceApi.DTOs.PagedResultDto`1[[EcommerceApi.DTOs.ProductResponseDto, EcommerceApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-27 11:16:18.341 +05:30 [INF] Executed action EcommerceApi.Controllers.ProductController.GetAll (EcommerceApi) in 18.5228ms
+2026-09-27 11:16:18.343 +05:30 [INF] Executed endpoint 'EcommerceApi.Controllers.ProductController.GetAll (EcommerceApi)'
+2026-09-27 11:16:18.347 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 11:16:18.351 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/product?pageNumber=1&pageSize=12 - 200 null application/json; charset=utf-8 124.2479ms
+2026-09-27 11:16:19.769 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/cart/add - null null
+2026-09-27 11:16:19.774 +05:30 [INF] CORS policy execution successful.
+2026-09-27 11:16:19.778 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 11:16:19.784 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/cart/add - 204 null null 14.9858ms
+2026-09-27 11:16:19.789 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/cart/add - application/json 30
+2026-09-27 11:16:19.793 +05:30 [INF] CORS policy execution successful.
+2026-09-27 11:16:19.796 +05:30 [INF] Executing endpoint 'EcommerceApi.Controllers.CartController.AddToCart (EcommerceApi)'
+2026-09-27 11:16:19.798 +05:30 [INF] Route matched with {action = "AddToCart", controller = "Cart"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddToCart(EcommerceApi.DTOs.AddToCartDto) on controller EcommerceApi.Controllers.CartController (EcommerceApi).
+2026-09-27 11:16:19.807 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[Id], [p].[Category], [p].[CreatedAt], [p].[Description], [p].[ImageUrl], [p].[Name], [p].[Price], [p].[Quantity]
+FROM [Products] AS [p]
+WHERE [p].[Id] = @__p_0
+2026-09-27 11:16:19.815 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__userId_0='?' (DbType = Int32), @__dto_ProductId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[AddedAt], [c].[ProductId], [c].[Quantity], [c].[UserId]
+FROM [CartItems] AS [c]
+WHERE [c].[UserId] = @__userId_0 AND [c].[ProductId] = @__dto_ProductId_1
+2026-09-27 11:16:19.823 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [CartItems] ([AddedAt], [ProductId], [Quantity], [UserId])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3);
+2026-09-27 11:16:19.828 +05:30 [INF] User 2 added Product 509 to cart, quantity 1
+2026-09-27 11:16:19.831 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-09-27 11:16:19.833 +05:30 [INF] Executed action EcommerceApi.Controllers.CartController.AddToCart (EcommerceApi) in 31.1412ms
+2026-09-27 11:16:19.835 +05:30 [INF] Executed endpoint 'EcommerceApi.Controllers.CartController.AddToCart (EcommerceApi)'
+2026-09-27 11:16:19.839 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 11:16:19.842 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/cart/add - 200 null application/json; charset=utf-8 53.2625ms
+2026-09-27 11:16:21.399 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/cart - null null
+2026-09-27 11:16:21.408 +05:30 [INF] CORS policy execution successful.
+2026-09-27 11:16:21.413 +05:30 [INF] Executing endpoint 'EcommerceApi.Controllers.CartController.GetCart (EcommerceApi)'
+2026-09-27 11:16:21.418 +05:30 [INF] Route matched with {action = "GetCart", controller = "Cart"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCart() on controller EcommerceApi.Controllers.CartController (EcommerceApi).
+2026-09-27 11:16:21.424 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id] AS [CartItemId], [c].[ProductId], [p].[Name], [p].[ImageUrl], [p].[Price], [c].[Quantity]
+FROM [CartItems] AS [c]
+INNER JOIN [Products] AS [p] ON [c].[ProductId] = [p].[Id]
+WHERE [c].[UserId] = @__userId_0
+2026-09-27 11:16:21.437 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[EcommerceApi.DTOs.CartItemResponseDto, EcommerceApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-27 11:16:21.442 +05:30 [INF] Executed action EcommerceApi.Controllers.CartController.GetCart (EcommerceApi) in 20.1054ms
+2026-09-27 11:16:21.444 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/cart - null null
+2026-09-27 11:16:21.451 +05:30 [INF] Executed endpoint 'EcommerceApi.Controllers.CartController.GetCart (EcommerceApi)'
+2026-09-27 11:16:21.456 +05:30 [INF] CORS policy execution successful.
+2026-09-27 11:16:21.459 +05:30 [INF] Executing endpoint 'EcommerceApi.Controllers.CartController.GetCart (EcommerceApi)'
+2026-09-27 11:16:21.461 +05:30 [INF] Route matched with {action = "GetCart", controller = "Cart"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCart() on controller EcommerceApi.Controllers.CartController (EcommerceApi).
+2026-09-27 11:16:21.464 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 11:16:21.469 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id] AS [CartItemId], [c].[ProductId], [p].[Name], [p].[ImageUrl], [p].[Price], [c].[Quantity]
+FROM [CartItems] AS [c]
+INNER JOIN [Products] AS [p] ON [c].[ProductId] = [p].[Id]
+WHERE [c].[UserId] = @__userId_0
+2026-09-27 11:16:21.471 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/cart - 200 null application/json; charset=utf-8 72.3795ms
+2026-09-27 11:16:21.475 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[EcommerceApi.DTOs.CartItemResponseDto, EcommerceApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-27 11:16:21.483 +05:30 [INF] Executed action EcommerceApi.Controllers.CartController.GetCart (EcommerceApi) in 16.8931ms
+2026-09-27 11:16:21.489 +05:30 [INF] Executed endpoint 'EcommerceApi.Controllers.CartController.GetCart (EcommerceApi)'
+2026-09-27 11:16:21.492 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 11:16:21.497 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/cart - 200 null application/json; charset=utf-8 52.8879ms
+2026-09-27 11:29:38.252 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/cart - null null
+2026-09-27 11:29:38.254 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/cart - null null
+2026-09-27 11:29:38.259 +05:30 [INF] CORS policy execution successful.
+2026-09-27 11:29:38.264 +05:30 [INF] CORS policy execution successful.
+2026-09-27 11:29:38.386 +05:30 [INF] Executed DbCommand (15ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 11:29:38.387 +05:30 [INF] Executed DbCommand (23ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 11:29:38.391 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/cart - 204 null null 136.989ms
+2026-09-27 11:29:38.395 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/cart - 204 null null 142.9922ms
+2026-09-27 11:29:38.400 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/cart - null null
+2026-09-27 11:29:38.410 +05:30 [INF] CORS policy execution successful.
+2026-09-27 11:29:38.412 +05:30 [INF] Executing endpoint 'EcommerceApi.Controllers.CartController.GetCart (EcommerceApi)'
+2026-09-27 11:29:38.414 +05:30 [INF] Route matched with {action = "GetCart", controller = "Cart"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCart() on controller EcommerceApi.Controllers.CartController (EcommerceApi).
+2026-09-27 11:29:38.429 +05:30 [INF] Executed DbCommand (11ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id] AS [CartItemId], [c].[ProductId], [p].[Name], [p].[ImageUrl], [p].[Price], [c].[Quantity]
+FROM [CartItems] AS [c]
+INNER JOIN [Products] AS [p] ON [c].[ProductId] = [p].[Id]
+WHERE [c].[UserId] = @__userId_0
+2026-09-27 11:29:38.434 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[EcommerceApi.DTOs.CartItemResponseDto, EcommerceApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-27 11:29:38.436 +05:30 [INF] Executed action EcommerceApi.Controllers.CartController.GetCart (EcommerceApi) in 19.267ms
+2026-09-27 11:29:38.438 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/cart - null null
+2026-09-27 11:29:38.439 +05:30 [INF] Executed endpoint 'EcommerceApi.Controllers.CartController.GetCart (EcommerceApi)'
+2026-09-27 11:29:38.444 +05:30 [INF] CORS policy execution successful.
+2026-09-27 11:29:38.448 +05:30 [INF] Executing endpoint 'EcommerceApi.Controllers.CartController.GetCart (EcommerceApi)'
+2026-09-27 11:29:38.448 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 11:29:38.450 +05:30 [INF] Route matched with {action = "GetCart", controller = "Cart"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCart() on controller EcommerceApi.Controllers.CartController (EcommerceApi).
+2026-09-27 11:29:38.454 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/cart - 200 null application/json; charset=utf-8 53.5239ms
+2026-09-27 11:29:38.460 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id] AS [CartItemId], [c].[ProductId], [p].[Name], [p].[ImageUrl], [p].[Price], [c].[Quantity]
+FROM [CartItems] AS [c]
+INNER JOIN [Products] AS [p] ON [c].[ProductId] = [p].[Id]
+WHERE [c].[UserId] = @__userId_0
+2026-09-27 11:29:38.467 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[EcommerceApi.DTOs.CartItemResponseDto, EcommerceApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-27 11:29:38.470 +05:30 [INF] Executed action EcommerceApi.Controllers.CartController.GetCart (EcommerceApi) in 13.2072ms
+2026-09-27 11:29:38.474 +05:30 [INF] Executed endpoint 'EcommerceApi.Controllers.CartController.GetCart (EcommerceApi)'
+2026-09-27 11:29:38.479 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 11:29:38.483 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/cart - 200 null application/json; charset=utf-8 44.9141ms
+2026-09-27 11:29:52.127 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5000/api/order/create - null null
+2026-09-27 11:29:52.135 +05:30 [INF] CORS policy execution successful.
+2026-09-27 11:29:52.206 +05:30 [INF] Executed DbCommand (65ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 11:29:52.210 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5000/api/order/create - 204 null null 82.9907ms
+2026-09-27 11:29:52.219 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/order/create - null 0
+2026-09-27 11:29:52.224 +05:30 [INF] CORS policy execution successful.
+2026-09-27 11:29:52.227 +05:30 [INF] Executing endpoint 'EcommerceApi.Controllers.OrderController.CreateOrder (EcommerceApi)'
+2026-09-27 11:29:52.231 +05:30 [INF] Route matched with {action = "CreateOrder", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateOrder() on controller EcommerceApi.Controllers.OrderController (EcommerceApi).
+2026-09-27 11:29:52.250 +05:30 [INF] Executed DbCommand (14ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[AddedAt], [c].[ProductId], [c].[Quantity], [c].[UserId], [p].[Id], [p].[Category], [p].[CreatedAt], [p].[Description], [p].[ImageUrl], [p].[Name], [p].[Price], [p].[Quantity]
+FROM [CartItems] AS [c]
+INNER JOIN [Products] AS [p] ON [c].[ProductId] = [p].[Id]
+WHERE [c].[UserId] = @__userId_0
+2026-09-27 11:29:52.708 +05:30 [INF] Executing OkObjectResult, writing value of type 'EcommerceApi.DTOs.CreateOrderResponseDto'.
+2026-09-27 11:29:52.712 +05:30 [INF] Executed action EcommerceApi.Controllers.OrderController.CreateOrder (EcommerceApi) in 477.1244ms
+2026-09-27 11:29:52.714 +05:30 [INF] Executed endpoint 'EcommerceApi.Controllers.OrderController.CreateOrder (EcommerceApi)'
+2026-09-27 11:29:52.773 +05:30 [INF] Executed DbCommand (46ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [LogEntries] ([Message], [Timestamp])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-09-27 11:29:52.781 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/order/create - 200 null application/json; charset=utf-8 561.6603ms
