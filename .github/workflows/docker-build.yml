@@ -9,8 +9,8 @@ on:
       - master
 
 env:
-  BACKEND_IMAGE: ashikdv/ecommerce-backend
-  FRONTEND_IMAGE: ashikdv/ecommerce-frontend
+  BACKEND_IMAGE: Abhishekkoli18/ecommerce-backend
+  FRONTEND_IMAGE: Abhishekkoli18/ecommerce-frontend
 
 jobs:
 
